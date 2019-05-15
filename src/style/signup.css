@@ -1,0 +1,22 @@
+body {
+    background: #a3de83;
+    }
+  .input{
+      margin: 10px;
+
+  }
+
+  .btn {
+      font-size: 25px;
+      margin: 10px
+  }
+
+  .textarea {
+    margin: 10px;
+    width: 30%;
+    height: 15%;
+  }
+
+  .signup {
+    text-align: center;  
+  }
