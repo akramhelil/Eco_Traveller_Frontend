@@ -1,20 +1,44 @@
 import React, { Component } from 'react'
+import TextField from '@material-ui/core/TextField'
+import { adapter } from '../adapter';
+
+import '../style/signup.css'
 
 export default class Login extends Component {
-  render () {
+  state = {
+    username: '',
+    password: ''
+  }
+  handleSubmit = (e) => {
+    e.preventDefault()
+    adapter.travellerLogin(this.state)
+      .then(console.log)
+      this.props.history.push(`/`)
+  }
+
+  changeHandler = (e) => {
+  
+    this.setState({
+     [ e.target.name]: e.target.value
+    })
+  }
+
+  render() {
+    // console.log(this.state)
     return (
-      <div>
-        <h1>Log In</h1>
-        <form action='/'>
-          <label htmlFor='username'>Username:</label>
-          <input type='text' />
-          <br />
-          <label htmlFor='password'>Passwrod:</label>
-          <input type='password' />
-          <br />
-          <input type='submit' value='submit' />
-        </form>
-      </div>
+      <React.Fragment>
+        <div className="signup">
+          <h1>Log In</h1>
+          <form onSubmit={this.handleSubmit}>
+            <TextField name='username' label='User Name:' onChange={this.changeHandler} />
+            <br />
+            <TextField name='password' label='Password:' onChange={this.changeHandler} type='password' />
+            <br />
+            <br/>
+            <input className='btn' type='submit' value='LOGIN' />
+          </form>
+        </div>
+      </React.Fragment>
     )
   }
 }
