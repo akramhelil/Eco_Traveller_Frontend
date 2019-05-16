@@ -15,6 +15,8 @@ const SignUpCom = props => <RouterLink to='/signup' {...props} />
 const LoginCom = props => <RouterLink to='/login' {...props} />
 const NewPostCom = props => <RouterLink to='/new' {...props} />
 const AllPosts = props => <RouterLink to='/posts' {...props} />
+const Articles = props => <RouterLink to='/articles' {...props} />
+const About = props => <RouterLink to='/about' {...props} />
 
 class NavBar extends Component {
   render () {
@@ -30,17 +32,23 @@ class NavBar extends Component {
                 </Link>
               </IconButton>
               <Typography variant='h6' color='inherit' className={classes.grow}>
-                <Link component={AllPosts} color='inherit'>
+                <Link component={AllPosts} color='inherit' style={{ textDecoration: 'none' }}>
                   Posts
                 </Link>
+                <Link component={Articles} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
+                  Articles
+                </Link>
+                <Link component={About} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
+                  About
+                </Link>
               </Typography>
-              <Link component={NewPostCom} color='inherit'>
+              <Link component={NewPostCom} color='inherit' style={{ textDecoration: 'none' }}>
                 <Button color='inherit'> New Post</Button>
               </Link>
-              <Link component={LoginCom} color='inherit'>
+              <Link component={LoginCom} color='inherit' style={{ textDecoration: 'none' }}>
                 <Button color='inherit'>Log In</Button>
               </Link>
-              <Link component={SignUpCom} color='inherit'>
+              <Link component={SignUpCom} color='inherit' style={{ textDecoration: 'none' }}>
                 <Button color='inherit'> Sign Up</Button>
               </Link>
             </Toolbar>
