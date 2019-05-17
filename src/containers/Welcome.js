@@ -3,6 +3,7 @@ import PostDeck from '../components/PostDeck'
 import PictureFrame from '../components/PictureFrame'
 import SideBar from '../components/SideBar'
 import Footer from './Footer'
+// import { Grid } from '@material-ui/core/Grid'
 
 function Welcome () {
   return (

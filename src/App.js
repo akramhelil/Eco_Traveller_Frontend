@@ -10,24 +10,25 @@ import PostDeck from './components/PostDeck'
 import Welcome from './containers/Welcome'
 import About from './containers/About'
 import Articles from './containers/Articles'
+import Grid from '@material-ui/core/Grid'
+import NewTrip from './components/NewTrip'
 
 function App () {
   return (
     <React.Fragment>
-      <Link component={RouterLink} to='/' color='inherit'>
-        <img src='logo.png' alt='logo' with='50' height='50' />
-      </Link>
-      <br />
-      <NavBar />
-      <Switch>
-        <Route path='/signup' component={Signup} />
-        <Route path='/articles' component={Articles} />
-        <Route path='/about' component={About} />
-        <Route path='/login' component={Login} />
-        <Route path='/new' component={NewPost} />
-        <Route path='/posts' component={PostDeck} />
-        <Route exact path='/' component={Welcome} />
-      </Switch>
+      <Grid>
+        <NavBar />
+        <Switch>
+          <Route path='/signup' component={Signup} />
+          <Route path='/articles' component={Articles} />
+          <Route path='/about' component={About} />
+          <Route path='/login' component={Login} />
+          <Route path='/newpost' component={NewPost} />
+          <Route path='/newtrip' component={NewTrip} />
+          <Route path='/posts' component={PostDeck} />
+          <Route exact path='/' component={Welcome} />
+        </Switch>
+      </Grid>
     </React.Fragment>
   )
 }

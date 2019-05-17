@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import TextField from '@material-ui/core/TextField'
 import { adapter } from '../adapter';
-
-import '../style/signup.css'
+import '../style/style.css'
 
 export default class Login extends Component {
   state = {
@@ -17,7 +16,6 @@ export default class Login extends Component {
   }
 
   changeHandler = (e) => {
-  
     this.setState({
      [ e.target.name]: e.target.value
     })
@@ -35,7 +33,7 @@ export default class Login extends Component {
             <TextField name='password' label='Password:' onChange={this.changeHandler} type='password' />
             <br />
             <br/>
-            <input className='btn' type='submit' value='LOGIN' />
+            <input className='button' type='submit' value='LOGIN' />
           </form>
         </div>
       </React.Fragment>

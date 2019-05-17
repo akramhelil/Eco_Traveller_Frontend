@@ -13,7 +13,8 @@ import { Link as RouterLink } from 'react-router-dom'
 
 const SignUpCom = props => <RouterLink to='/signup' {...props} />
 const LoginCom = props => <RouterLink to='/login' {...props} />
-const NewPostCom = props => <RouterLink to='/new' {...props} />
+const NewPostCom = props => <RouterLink to='/newpost' {...props} />
+const NewTipCom = props => <RouterLink to='/newtrip' {...props} />
 const AllPosts = props => <RouterLink to='/posts' {...props} />
 const Articles = props => <RouterLink to='/articles' {...props} />
 const About = props => <RouterLink to='/about' {...props} />
@@ -24,7 +25,7 @@ class NavBar extends Component {
     return (
       <React.Fragment>
         <div className={classes.root}>
-          <AppBar position='static' style={{ background: 'green' }}>
+          <AppBar position='static' style={{ background: '#4CAF50' }}>
             <Toolbar>
               <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
                 <Link component={RouterLink} to='/' color='inherit'>
@@ -32,7 +33,10 @@ class NavBar extends Component {
                 </Link>
               </IconButton>
               <Typography variant='h6' color='inherit' className={classes.grow}>
-                <Link component={AllPosts} color='inherit' style={{ textDecoration: 'none' }}>
+                <Link component={RouterLink} to='/' color='inherit' style={{ textDecoration: 'none' }}>
+                  Home
+                </Link>
+                <Link component={AllPosts} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
                   Posts
                 </Link>
                 <Link component={Articles} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
@@ -42,6 +46,9 @@ class NavBar extends Component {
                   About
                 </Link>
               </Typography>
+              <Link component={NewTipCom} color='inherit' style={{ textDecoration: 'none' }}>
+                <Button color='inherit'> New Trip</Button>
+              </Link>
               <Link component={NewPostCom} color='inherit' style={{ textDecoration: 'none' }}>
                 <Button color='inherit'> New Post</Button>
               </Link>

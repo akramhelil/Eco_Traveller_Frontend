@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-
+import Grid from '@material-ui/core/Grid'
 export class PostCard extends Component {
   render () {
     return (
-      <div>
-        <h3>Post Card </h3>
-      </div>
+      <React.Fragment>
+        <Grid container >
+          <h3>Post Card </h3>
+        </Grid>
+      </React.Fragment>
     )
   }
 }

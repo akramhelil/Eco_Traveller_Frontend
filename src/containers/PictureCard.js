@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
-
+import Card from '@material-ui/core/Card'
+import Grid from '@material-ui/core/Grid'
 export default class PictureCard extends Component {
   render () {
     return (
-      <div>Pictures With Linked to the Articles</div>
+      <React.Fragment>
+        <h3>Picture Card</h3>
+      </React.Fragment>
     )
   }
 }
