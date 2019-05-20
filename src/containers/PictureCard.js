@@ -5,7 +5,9 @@ export default class PictureCard extends Component {
   render () {
     return (
       <React.Fragment>
+
         <h3>Picture Card</h3>
+
       </React.Fragment>
     )
   }

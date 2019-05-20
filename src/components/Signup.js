@@ -3,15 +3,10 @@ import '../style/style.css'
 import TextField from '@material-ui/core/TextField'
 import { adapter } from '../adapter';
 import Avatar from '@material-ui/core/Avatar'
+import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid';
+import { styles } from '../style/MateilizeStyle'
 
-
-const avatarStyle = {
-    margin: 50,
-    width: 150,
-  height: 150,
-  textAligin: 'center'
-}
 
  class Signup extends Component {
   state = {
@@ -60,36 +55,41 @@ const avatarStyle = {
     console.log(this.state)
     return (
       <React.Fragment>
-        <Grid container justify="center" alignItems="center">
-          <form onSubmit={this.handleSubmit}>
-            <Avatar
-            src={this.state.profile_photo}
-              style={avatarStyle}
-            />
-            <button
-              className="button" onClick={this.openWidget} color='primary'>
-              Profile Photo</button>
-            <br />
-            <label htmlFor="profile_photo"></label>
-            <TextField name="first_name" label="First Name:" onChange={this.changeHandler} />
-            <TextField name="last_name" label="Last Name:" onChange={this.changeHandler} />
-            <br/>
-            <TextField name="username" label="User Name:" onChange={this.changeHandler} />
-            <br/>
-            <TextField name="email" label="Email:" onChange={this.changeHandler} />
-            <br/>
-            <TextField name="password" label="Password:" onChange={this.changeHandler} type="password" />
-            <br/>
-            <TextField name="password" label="Confirm Password:" onChange={this.changeHandler} type="password" />
-            <br />
-            <br/>
-            <textarea name="about" onChange={this.changeHandler} 
-              rows="5" cols="33" placeholder='Tell us about yourself...'>
-              </textarea>
-            <br />
-            <br />
-            <input className="button" type='submit' value="Submit"/>
-          </form>
+       <Grid container direction="column"  alignItems="center" justify="space-evenly">
+            <Paper style={styles.paper}>
+              <form onSubmit={this.handleSubmit}>
+                <Grid item >
+                  <Avatar src={this.state.profile_photo} style={styles.newAvatarStyle} />
+                </Grid>
+
+                <Grid item style={styles.buttonSignUp} >
+                  <button className="button" onClick={this.openWidget} color='primary' >Profile Photo</button >
+                </Grid>
+
+                <Grid item style={styles.input}>
+                  <TextField name="first_name" label="First Name:" onChange={this.changeHandler}  style={styles.input} />
+                  <TextField name="last_name" label="Last Name:" onChange={this.changeHandler}  style={styles.input} />
+                </Grid>
+
+                <Grid item style={styles.input}>
+                  <TextField name="username" label="User Name:" onChange={this.changeHandler}  style={styles.input}/>
+                  <TextField name="email" label="Email:" onChange={this.changeHandler} style={styles.input} />
+                </Grid>
+
+                <Grid item   style={styles.input}>
+                  <TextField name="password" label="Password:" onChange={this.changeHandler} type="password"  style={styles.input}/>
+                  <TextField name="password" label="Confirm Password:" onChange={this.changeHandler} type="password"  style={styles.input}/>
+                </Grid>
+
+                <Grid item   style={styles.input}>
+                  <textarea name="about" onChange={this.changeHandler} rows="4" cols="40" placeholder='Tell us about yourself...' style={styles.input}></textarea>
+                </Grid>
+                  
+                <Grid item style={styles.buttonSignUp} >
+                  <input className="button" type='submit' value="Submit"   />
+                </Grid>
+              </form>
+            </Paper>
         </Grid>
       </React.Fragment>
     )

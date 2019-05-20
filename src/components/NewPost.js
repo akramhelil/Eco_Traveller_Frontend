@@ -3,13 +3,16 @@ import '../style/style.css'
 import TextField from '@material-ui/core/TextField'
 import { adapter } from '../adapter'
 import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
+
 // import Image from 'material-ui-image'
 // import CardMedia from '@material-ui/core/CardMedia';
 
-export default class NewPost extends Component {
+ class NewPost extends Component {
 
   state = {
-    // trip_id: 1
+    // use redux the get the currentTrip.id will be assigined to the trip_id
+    trip_id: null,
     title: '',
     likes: 0,
     content: '',
@@ -25,7 +28,6 @@ export default class NewPost extends Component {
        uploadPreset: process.env.REACT_APP_UPLOAD_PRESET_KEY
      },
      (error, result) => {
-
        if (result && result.event === "success") {
          this.setState({
           img_url: `https://res.cloudinary.com/ecotraveller/image/upload/${result.info.path}`, uploaded: true
@@ -52,6 +54,8 @@ export default class NewPost extends Component {
     return (
       <React.Fragment>
         <Grid container justify='center' alignItems='center'>
+          <div className='signup'>
+            <Paper style={{ margin: 20, paddingLeft: 80, paddingTop: 40, paddingBottom: 20, paddingRight: 80 }}>
           <img src={this.state.img_url} style={{ height: "10%", width: 300, margin: 20 }} alt='post-picute'/>
           <form onSubmit={this.handleSubmit}>
             <button
@@ -62,13 +66,18 @@ export default class NewPost extends Component {
             <TextField name='title' label='Title:' onChange={this.changeHandler} />
             <br />            <br />            <br />
             <textarea name='content' onChange={this.changeHandler}
-              rows='5' cols='33' placeholder='Tell us about your post...' />
+              rows='5' cols='50' placeholder='Tell us about your post...' />
             <br />
             <br />
             <input className='button' type='submit' value='Submit' />
-          </form>
+            </form>
+          </Paper>
+         </div>
         </Grid>
       </React.Fragment>
     )
   }
 }
+
+
+export default NewPost

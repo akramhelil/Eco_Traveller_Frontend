@@ -10,6 +10,7 @@ import { withStyles } from '@material-ui/core/styles'
 import { styles } from '../style/MateilizeStyle'
 import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid'
 
 const SignUpCom = props => <RouterLink to='/signup' {...props} />
 const LoginCom = props => <RouterLink to='/login' {...props} />
@@ -24,43 +25,48 @@ class NavBar extends Component {
     const { classes } = this.props
     return (
       <React.Fragment>
-        <div className={classes.root}>
-          <AppBar position='static' style={{ background: '#4CAF50' }}>
-            <Toolbar>
-              <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
-                <Link component={RouterLink} to='/' color='inherit'>
-                  <PublicIcon />
-                </Link>
-              </IconButton>
-              <Typography variant='h6' color='inherit' className={classes.grow}>
-                <Link component={RouterLink} to='/' color='inherit' style={{ textDecoration: 'none' }}>
+        <Grid container>
+          <Grid item xs={12}>
+
+            <div className={classes.root}>
+              <AppBar position='static' style={{ background: '#4CAF50' }}>
+                <Toolbar>
+                  <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
+                    <Link component={RouterLink} to='/' color='inherit'>
+                      <PublicIcon />
+                    </Link>
+                  </IconButton>
+                  <Typography variant='h6' color='inherit' className={classes.grow}>
+                    <Link component={RouterLink} to='/' color='inherit' style={styles.navBarLinks}>
                   Home
-                </Link>
-                <Link component={AllPosts} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
+                    </Link>
+                    <Link component={AllPosts} color='inherit' style={styles.navBarLinks}>
                   Posts
-                </Link>
-                <Link component={Articles} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
+                    </Link>
+                    <Link component={Articles} color='inherit' style={styles.navBarLinks}>
                   Articles
-                </Link>
-                <Link component={About} color='inherit' style={{ textDecoration: 'none', margin: 10 }}>
+                    </Link>
+                    <Link component={About} color='inherit' style={styles.navBarLinks}>
                   About
-                </Link>
-              </Typography>
-              <Link component={NewTipCom} color='inherit' style={{ textDecoration: 'none' }}>
-                <Button color='inherit'> New Trip</Button>
-              </Link>
-              <Link component={NewPostCom} color='inherit' style={{ textDecoration: 'none' }}>
-                <Button color='inherit'> New Post</Button>
-              </Link>
-              <Link component={LoginCom} color='inherit' style={{ textDecoration: 'none' }}>
-                <Button color='inherit'>Log In</Button>
-              </Link>
-              <Link component={SignUpCom} color='inherit' style={{ textDecoration: 'none' }}>
-                <Button color='inherit'> Sign Up</Button>
-              </Link>
-            </Toolbar>
-          </AppBar>
-        </div>
+                    </Link>
+                  </Typography>
+                  <Link component={NewTipCom} color='inherit' style={styles.navBarLinks}>
+                    <Button color='inherit'> New Trip</Button>
+                  </Link>
+                  <Link component={NewPostCom} color='inherit' style={styles.navBarLinks}>
+                    <Button color='inherit'> New Post</Button>
+                  </Link>
+                  <Link component={LoginCom} color='inherit' style={styles.navBarLinks}>
+                    <Button color='inherit'>Log In</Button>
+                  </Link>
+                  <Link component={SignUpCom} color='inherit' style={styles.navBarLinks}>
+                    <Button color='inherit'> Sign Up</Button>
+                  </Link>
+                </Toolbar>
+              </AppBar>
+            </div>
+          </Grid>
+        </Grid>
       </React.Fragment>
     )
   }

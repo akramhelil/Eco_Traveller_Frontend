@@ -1,6 +1,9 @@
 
 const initialState = {
-  hello: 'beef'
+  currentTraveller: null,
+  currentTrip: null,
+  posts: [],
+  trips: []
 }
 
 function reducer (state = initialState, action) {

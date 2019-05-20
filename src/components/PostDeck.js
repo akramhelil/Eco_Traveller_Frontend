@@ -1,12 +1,39 @@
 import React, { Component } from 'react'
+import PostCard from '../containers/PostCard'
+import Grid from '@material-ui/core/Grid'
+import { styles } from '../style/MateilizeStyle'
 
 class PostDeck extends Component {
   render () {
     return (
-      <div>
-        <h1>Post Deck</h1>
-        <h2>Post Card Component</h2>
-      </div>
+      <React.Fragment>
+        <Grid container>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+          <Grid item style={styles.postCard} xs>
+            <PostCard />
+          </Grid>
+        </Grid>
+      </React.Fragment>
     )
   }
 }
