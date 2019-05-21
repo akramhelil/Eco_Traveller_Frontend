@@ -22,6 +22,13 @@ const Articles = props => <RouterLink to='/articles' {...props} />
 const About = props => <RouterLink to='/about' {...props} />
 
 class NavBar extends Component {
+
+  logOutHandle = () => {
+    localStorage.removeItem("token")
+    window.location.reload(false); 
+  }
+
+
   render () {
     // console.log('Nav Bar Props', this.props.currentTraveller)
     const { classes } = this.props
@@ -56,7 +63,7 @@ class NavBar extends Component {
                     ? <Link component={NewTipCom} color='inherit' style={styles.navBarLinks}>
                       <Button color='inherit'> New Trip</Button>
                     </Link> : null}
-                  {this.props.currentTraveller && this.props.currentTrip
+                  {this.props.currentTraveller
                     ? <Link component={NewPostCom} color='inherit' style={styles.navBarLinks}>
                       <Button color='inherit'> New Post</Button>
                     </Link>
@@ -69,6 +76,8 @@ class NavBar extends Component {
                     : <Link component={SignUpCom} color='inherit' style={styles.navBarLinks}>
                       <Button color='inherit'> Sign Up</Button>
                     </Link>}
+                  {this.props.currentTraveller ?
+                    <Button color='inherit' onClick={this.logOutHandle}> Log Out</Button> : null}
                 </Toolbar>
               </AppBar>
             </div>

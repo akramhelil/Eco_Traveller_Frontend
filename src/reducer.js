@@ -18,10 +18,20 @@ function reducer (state = initialState, action) {
         ...state,
         currentTraveller: action.payload
       }
+    case 'AUTO_LOGIN':
+      return {
+        ...state,
+        currentTraveller: action.payload
+      }
     case 'NEW_TRIP':
       return {
         ...state,
         currentTrip: action.payload
+      }
+    case 'FETCH_POSTS':
+      return {
+        ...state,
+        posts: action.payload
       }
     default:
       return state

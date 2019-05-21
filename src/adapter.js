@@ -2,6 +2,8 @@ const newTravellerURL = 'http://localhost:4000/travellers'
 const travellerLoginURL = 'http://localhost:4000/login'
 const newPostURL = 'http://localhost:4000/posts'
 const newTripURL = 'http://localhost:4000/trips'
+const autoLogin = 'http://localhost:4000/auto_login'
+const postsURL = 'http://localhost:4000/posts'
 
 export const adapter = {
   createTraveller: travellerData => {
@@ -23,6 +25,16 @@ export const adapter = {
         'Accept': 'application/json'
       },
       body: JSON.stringify(loginData)
+    })
+      .then(res => res.json())
+  },
+
+  autoLogin: (token) => {
+    // console.log(token)
+    return fetch(autoLogin, {
+      headers: {
+        'Authorization': token
+      }
     })
       .then(res => res.json())
   },
@@ -61,5 +73,10 @@ export const adapter = {
   },
   deleteTraveller: () => {
     // fetch to the delete traveller action
+  },
+  getPosts: () => {
+    return fetch(postsURL)
+      .then(res => res.json())
   }
+
 }// end of the Adapter

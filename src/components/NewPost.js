@@ -55,7 +55,7 @@ import { connect } from 'react-redux'
    }
   
    render() {
-    console.log(this.state)
+    console.log(this.props)
     return (
       <React.Fragment>
         <Grid container justify='center' alignItems='center'>

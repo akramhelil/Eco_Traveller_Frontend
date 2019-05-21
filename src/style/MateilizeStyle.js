@@ -12,10 +12,12 @@ export const styles = {
   },
   profileCard: {
     margin: 10
-    // backgroundColor: '#d0e6c6'
   },
   postDeck: {
     margin: 10,
+    itemAlign: 'center'
+  },
+  postCard: {
     itemAlign: 'center'
   },
   avatarStyle: {

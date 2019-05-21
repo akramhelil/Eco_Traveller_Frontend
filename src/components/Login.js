@@ -76,6 +76,7 @@ import { connect } from 'react-redux'
   // console.log(state.currentTraveller)
   return {
     currentTraveller: state.currentTraveller
+    // currentTrip: state.currentTraveller.trips[-1] ? state.currentTraveller.trips[-1] : null
   }
 }
 
