@@ -5,6 +5,7 @@ import { DateFormatInput } from 'material-ui-next-pickers'
 import Paper from '@material-ui/core/Paper'
 // import { styles } from '../style/MateilizeStyle'
 import { adapter } from '../adapter';
+import { connect } from 'react-redux'
 
 const loginStyle = {
   margin: 20,
@@ -17,9 +18,10 @@ const loginStyle = {
 
    state = {
       date: '',
-      title: '', 
+     name: ''
+    
       // this current trip will be pulled from Redux currentTrtip
-      currentTrip: null
+      // currentTrip: null
     }
 
   changeHandlerDate = (date) => {
@@ -29,27 +31,38 @@ const loginStyle = {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    adapter.createTrip(this.state)
-      .then(console.log)
-    // SetState for the Current user via Redux
-      this.props.history.push(`/`)
+    const newTrip = {
+      traveller_id: this.props.currentTraveller.id,
+      date: this.state.date,
+      name: this.state.name
+   }
+    adapter.createTrip(newTrip)
+      .then(response => this.setCurrentTrip(response))
   }
   changeHandler = (e) => {
     if (e.target.name === 'name') {
       this.setState({
-        title: e.target.value
+        name: e.target.value
       })
     }
   }
+   setCurrentTrip = (response) => {
+    //  console.log("Set Current Trip", response.trip)
+    this.props.dispatch({type: 'NEW_TRIP',payload: response.trip})
+        // go back to the main page
+     this.props.history.push(`/`)
+   }
 
   render () {
     const { date } = this.state
-    console.log(this.state)
+    // console.log("NEW TRIP STATE",this.state)
+    // console.log("NEW TRIP PROPS",this.props)
     return (
       <React.Fragment>
         <Grid container justify='center' alignItems='center' >
           <div className="signup">
             <Paper style={loginStyle}>
+              <h2>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </h2>
               <form onSubmit={this.handleSubmit}>
                 <TextField label='Trip Name:'
                   name='name' style={{ margin: 30 }}
@@ -68,5 +81,12 @@ const loginStyle = {
   }
  }
 
+ function mapStateToProps(state) {
+  // console.log(state.currentTraveller)
+  return {
+    currentTraveller: state.currentTraveller,
+    currentTrip: state.currentTrip
+  }
+}
 
-export default NewTrip
+export default connect(mapStateToProps)(NewTrip)

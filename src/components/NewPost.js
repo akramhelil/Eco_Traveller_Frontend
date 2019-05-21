@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField'
 import { adapter } from '../adapter'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
-
+import { connect } from 'react-redux'
 // import Image from 'material-ui-image'
 // import CardMedia from '@material-ui/core/CardMedia';
 
@@ -12,7 +12,7 @@ import Paper from '@material-ui/core/Paper'
 
   state = {
     // use redux the get the currentTrip.id will be assigined to the trip_id
-    trip_id: null,
+    trip_id: this.props.currentTrip ? this.props.currentTrip.id : null, 
     title: '',
     likes: 0,
     content: '',
@@ -49,8 +49,13 @@ import Paper from '@material-ui/core/Paper'
       [e.target.name]: e.target.value
     })
   }
+
+   addNewPost = () => {
+    //  dispatch this post as ADD POST Action type to the Redux where it needs to go. 
+   }
   
-  render () {
+   render() {
+    console.log(this.state)
     return (
       <React.Fragment>
         <Grid container justify='center' alignItems='center'>
@@ -79,5 +84,12 @@ import Paper from '@material-ui/core/Paper'
   }
 }
 
+function mapStateToProps(state) {
+  console.log(state.currentTrip)
+  return {
+    currentTrip: state.currentTrip
+  }
+}
 
-export default NewPost
+
+export default connect(mapStateToProps)(NewPost)

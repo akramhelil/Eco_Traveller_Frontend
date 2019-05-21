@@ -11,6 +11,7 @@ import { styles } from '../style/MateilizeStyle'
 import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid'
+import { connect } from 'react-redux'
 
 const SignUpCom = props => <RouterLink to='/signup' {...props} />
 const LoginCom = props => <RouterLink to='/login' {...props} />
@@ -22,6 +23,7 @@ const About = props => <RouterLink to='/about' {...props} />
 
 class NavBar extends Component {
   render () {
+    // console.log('Nav Bar Props', this.props.currentTraveller)
     const { classes } = this.props
     return (
       <React.Fragment>
@@ -50,18 +52,23 @@ class NavBar extends Component {
                   About
                     </Link>
                   </Typography>
-                  <Link component={NewTipCom} color='inherit' style={styles.navBarLinks}>
-                    <Button color='inherit'> New Trip</Button>
-                  </Link>
-                  <Link component={NewPostCom} color='inherit' style={styles.navBarLinks}>
-                    <Button color='inherit'> New Post</Button>
-                  </Link>
-                  <Link component={LoginCom} color='inherit' style={styles.navBarLinks}>
+                  {this.props.currentTraveller && !this.props.currentTrip
+                    ? <Link component={NewTipCom} color='inherit' style={styles.navBarLinks}>
+                      <Button color='inherit'> New Trip</Button>
+                    </Link> : null}
+                  {this.props.currentTraveller && this.props.currentTrip
+                    ? <Link component={NewPostCom} color='inherit' style={styles.navBarLinks}>
+                      <Button color='inherit'> New Post</Button>
+                    </Link>
+                    : null}
+                  {this.props.currentTraveller ? null : <Link component={LoginCom} color='inherit' style={styles.navBarLinks}>
                     <Button color='inherit'>Log In</Button>
-                  </Link>
-                  <Link component={SignUpCom} color='inherit' style={styles.navBarLinks}>
-                    <Button color='inherit'> Sign Up</Button>
-                  </Link>
+                  </Link> }
+
+                  {this.props.currentTraveller ? null
+                    : <Link component={SignUpCom} color='inherit' style={styles.navBarLinks}>
+                      <Button color='inherit'> Sign Up</Button>
+                    </Link>}
                 </Toolbar>
               </AppBar>
             </div>
@@ -72,7 +79,15 @@ class NavBar extends Component {
   }
 }
 
+function mapStateToProps (state) {
+  // console.log(state.currentTrip)
+  return {
+    currentTraveller: state.currentTraveller,
+    currentTrip: state.currentTrip
+  }
+}
+
 NavBar.propTypes = {
   classes: PropTypes.object.isRequired
 }
-export default withStyles(styles)(NavBar)
+export default withStyles(styles)(connect(mapStateToProps)(NavBar))

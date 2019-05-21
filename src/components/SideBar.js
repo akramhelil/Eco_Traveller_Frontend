@@ -13,11 +13,14 @@ export default class SideBar extends Component {
     return (
       <React.Fragment>
         <Grid container >
-          <Grid item sm={12} style={styles.footer}>
+          {this.props.currentTraveller
+            ? <Grid item sm={12} style={styles.footer}>
             <Paper>
-              <UserProfile />
-            </Paper>
-          </Grid>
+                <UserProfile currentTraveller={this.props.currentTraveller} />
+              </Paper>
+          </Grid> : null
+          }
+
           <Grid item sm={12} style={styles.footer}>
             <Paper >
               <MostVisited />

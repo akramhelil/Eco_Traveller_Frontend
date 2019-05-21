@@ -6,6 +6,7 @@ import Avatar from '@material-ui/core/Avatar'
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid';
 import { styles } from '../style/MateilizeStyle'
+import { connect } from 'react-redux'
 
 
  class Signup extends Component {
@@ -22,9 +23,8 @@ import { styles } from '../style/MateilizeStyle'
   handleSubmit = (e) => {
     e.preventDefault()
     adapter.createTraveller(this.state)
-      .then(console.log)
-    
-      this.props.history.push(`/`)
+      .then(response => this.setCurrentUser(response))
+
   }
 
   changeHandler = (e) => {
@@ -49,10 +49,17 @@ import { styles } from '../style/MateilizeStyle'
        }
      }
    ).open()
+   }
+   
+   setCurrentUser = (response) => {
+     this.props.dispatch({type: 'SIGN_UP',payload: response.traveller})
+     localStorage.setItem("token", response.token)
+         // go back to the main page
+      this.props.history.push(`/`)
   }
 
   render() {
-    console.log(this.state)
+    // console.log('Popps SignUp', this.props.currentTraveller)
     return (
       <React.Fragment>
        <Grid container direction="column"  alignItems="center" justify="space-evenly">
@@ -96,4 +103,11 @@ import { styles } from '../style/MateilizeStyle'
   }
 }
 
-export default Signup
+function mapStateToProps(state) {
+  // console.log(state.currentTraveller)
+  return {
+    currentTraveller: state.currentTraveller
+  }
+}
+
+export default connect(mapStateToProps)(Signup)

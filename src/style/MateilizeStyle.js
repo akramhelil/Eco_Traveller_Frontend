@@ -12,6 +12,7 @@ export const styles = {
   },
   profileCard: {
     margin: 10
+    // backgroundColor: '#d0e6c6'
   },
   postDeck: {
     margin: 10,
@@ -44,7 +45,8 @@ export const styles = {
   },
   paper: {
     margin: 20,
-    padding: 40
+    padding: 40,
+    backgroundColor: '#d0e6c6'
   },
   buttonSignUp: {
     marginLeft: 140,
