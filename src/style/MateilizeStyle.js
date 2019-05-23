@@ -26,7 +26,8 @@ export const styles = {
     height: 200
   },
   footer: {
-    margin: 10
+    margin: 0,
+    textDecoration: 'none'
   },
   pictureFrame: {
     margin: 20
@@ -53,5 +54,26 @@ export const styles = {
   buttonSignUp: {
     marginLeft: 140,
     paddingTop: 20
+  },
+  card: {
+    display: 'flex'
+  },
+  details: {
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  content: {
+    flex: '1 0 auto'
+  },
+  cover: {
+    width: 151
+  },
+  controls: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+  playIcon: {
+    height: 38,
+    width: 38
   }
 }

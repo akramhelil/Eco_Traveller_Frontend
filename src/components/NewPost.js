@@ -5,20 +5,25 @@ import { adapter } from '../adapter'
 import Grid from '@material-ui/core/Grid'
 import Paper from '@material-ui/core/Paper'
 import { connect } from 'react-redux'
-// import Image from 'material-ui-image'
-// import CardMedia from '@material-ui/core/CardMedia';
+import Select from '@material-ui/core/Select'
+import MenuItem from '@material-ui/core/MenuItem';
+
 
  class NewPost extends Component {
 
   state = {
-    // use redux the get the currentTrip.id will be assigined to the trip_id
-    trip_id: this.props.currentTrip ? this.props.currentTrip.id : null, 
+    trip_id: '', 
     title: '',
     likes: 0,
     content: '',
-    img_url: './logo.png'
-
+    img_url: './logo.png',
+    open: false
   }
+   
+   
+  //  componentDidMount() {
+  //    console.log('Mounted')
+  //  }
   
   openWidget = (e) => {
     e.preventDefault()
@@ -50,19 +55,55 @@ import { connect } from 'react-redux'
     })
   }
 
-   addNewPost = () => {
-    //  dispatch this post as ADD POST Action type to the Redux where it needs to go. 
+  handleClose = () => {
+    this.setState({ open: false });
+  };
+
+  handleOpen = () => {
+    this.setState({ open: true });
+  };
+
+   handleSelectChange = (e) => {
+    this.setState({
+      trip_id: e.target.value,
+    })
+     
+  }
+
+   dropDownList = () => {
+     if (this.props.currentTraveller) {
+       let optionList = this.props.currentTraveller.trips.map((trip) => {
+         return <MenuItem value={trip.id}  key={trip.id}> {trip.name}</MenuItem>
+       })
+       return optionList
+    }
    }
+     
+
+  //  addNewPost = () => {
+  //   //  dispatch this post as ADD POST Action type to the Redux where it needs to go. 
+  //  }
   
    render() {
-    console.log(this.props)
     return (
       <React.Fragment>
         <Grid container justify='center' alignItems='center'>
           <div className='signup'>
             <Paper style={{ margin: 20, paddingLeft: 80, paddingTop: 40, paddingBottom: 20, paddingRight: 80 }}>
-          <img src={this.state.img_url} style={{ height: "10%", width: 300, margin: 20 }} alt='post-picute'/>
-          <form onSubmit={this.handleSubmit}>
+              <img src={this.state.img_url} style={{ height: "10%", width: 300, margin: 20 }} alt='post-picute' />
+              <h3>Please Pick a Trip:</h3>
+              <form onSubmit={this.handleSubmit}>
+               <Select autoWidth
+                  open={this.state.open}
+                  onClose={this.handleClose}
+                  onOpen={this.handleOpen}
+                  value={this.state.trip_id}
+                  onChange={this.handleSelectChange}
+                >
+                  {this.dropDownList()}
+                </Select>
+                <br /> 
+                <br/>
             <button
               className='button' onClick={this.openWidget} color='primary'>
               Upload Photo</button>
@@ -85,9 +126,9 @@ import { connect } from 'react-redux'
 }
 
 function mapStateToProps(state) {
-  console.log(state.currentTrip)
+  console.log(state.currentTraveller)
   return {
-    currentTrip: state.currentTrip
+    currentTraveller: state.currentTraveller
   }
 }
 

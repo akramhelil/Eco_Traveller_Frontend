@@ -25,6 +25,7 @@ class NavBar extends Component {
 
   logOutHandle = () => {
     localStorage.removeItem("token")
+    // this.props.history.push(`/`)
     window.location.reload(false); 
   }
 
@@ -91,8 +92,8 @@ class NavBar extends Component {
 function mapStateToProps (state) {
   // console.log(state.currentTrip)
   return {
-    currentTraveller: state.currentTraveller,
-    currentTrip: state.currentTrip
+    currentTraveller: state.currentTraveller
+      // state.currentTraveller.trips.last ? state.currentTraveller.trips.last : null
   }
 }
 

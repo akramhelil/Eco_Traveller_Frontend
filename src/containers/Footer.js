@@ -1,27 +1,42 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid'
 export default class Footer extends Component {
   render () {
     return (
       <React.Fragment>
         <footer>
-          <Link to='/'>
-            <li>Home</li>
-          </Link>
-          <Link to='/posts'>
-            <li>Posts</li>
-          </Link>
-
-          <Link to='/articles'>
-            <li>Articles</li>
-          </Link>
-
-          <Link to='/about'>
-            <li>About</li>
-          </Link>
-
-          <br />
-          Copyright &copy;  eco-traveller.com
+          <div className='signup'>
+            <Grid container
+              direction='row'
+              justify='center'
+              alignItems='flex-end' >
+              <Grid item xs={3}>
+                <Link to='/'>
+               Home
+                </Link>
+              </Grid>
+              <Grid item xs={3}>
+                <Link to='/posts'>
+               Posts
+                </Link>
+              </Grid>
+              <Grid item xs={3}>
+                <Link to='/articles'>
+               Articles
+                </Link>
+              </Grid>
+              <Grid item xs={3}>
+                <Link to='/about'>
+               About
+                </Link>
+              </Grid>
+              <br />
+              <Grid item xs={12}>
+                Copyright &copy;  eco-traveller.com
+              </Grid>
+            </Grid>
+          </div>
         </footer>
       </React.Fragment>
     )

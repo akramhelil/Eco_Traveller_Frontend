@@ -4,6 +4,7 @@ const newPostURL = 'http://localhost:4000/posts'
 const newTripURL = 'http://localhost:4000/trips'
 const autoLogin = 'http://localhost:4000/auto_login'
 const postsURL = 'http://localhost:4000/posts'
+const tripsURL = 'http://localhost:4000/trips'
 
 export const adapter = {
   createTraveller: travellerData => {
@@ -76,6 +77,26 @@ export const adapter = {
   },
   getPosts: () => {
     return fetch(postsURL)
+      .then(res => res.json())
+  },
+  getTrips: () => {
+    return fetch(tripsURL)
+      .then(res => res.json())
+  },
+  upateTraveller: (data, id) => {
+    return fetch(`http://localhost:4000/travellers/${id}`, {
+      method: 'PATCH',
+      headers:
+          { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        first_name: data.first_name,
+        last_name: data.last_name,
+        username: data.username,
+        profile_photo: data.profile_photo,
+        email: data.email,
+        about: data.about
+      })
+    })
       .then(res => res.json())
   }
 

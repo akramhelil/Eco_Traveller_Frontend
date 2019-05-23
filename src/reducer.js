@@ -33,6 +33,16 @@ function reducer (state = initialState, action) {
         ...state,
         posts: action.payload
       }
+    case 'UPDATE_PROFILE':
+      return {
+        ...state,
+        currentTraveller: action.payload
+      }
+    case 'FETCH_TRIPS':
+      return {
+        ...state,
+        trips: action.payload
+      }
     default:
       return state
   }

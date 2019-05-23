@@ -15,20 +15,14 @@ export default class SideBar extends Component {
         <Grid container >
           {this.props.currentTraveller
             ? <Grid item sm={12} style={styles.footer}>
-            <Paper>
+              <Paper>
                 <UserProfile currentTraveller={this.props.currentTraveller} />
               </Paper>
-          </Grid> : null
+            </Grid> : null
           }
-
           <Grid item sm={12} style={styles.footer}>
             <Paper >
               <MostVisited />
-            </Paper>
-          </Grid>
-          <Grid item sm={12} style={styles.footer}>
-            <Paper>
-              <Footer />
             </Paper>
           </Grid>
         </Grid>

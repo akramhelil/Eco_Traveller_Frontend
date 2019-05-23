@@ -19,9 +19,7 @@ function Welcome (props) {
             <PictureFrame />
           </Paper>
           <Grid item style={styles.postDeck} >
-            {/* <Paper> */}
             <PostDeck />
-            {/* </Paper> */}
           </Grid>
         </Grid>
       </Grid>
