@@ -21,6 +21,14 @@ const loginStyle = {
      name: ''
     }
 
+   componentDidMount() {
+    if (localStorage.getItem('token')) {
+      let token = localStorage.getItem('token')
+      adapter.autoLogin(token)
+        .then(traveller => this.props.dispatch({ type: 'AUTO_LOGIN', payload: traveller }))
+    }
+   }
+
   changeHandlerDate = (date) => {
         // console.log('Date: ', date)
     this.setState({date})
@@ -52,27 +60,32 @@ const loginStyle = {
 
   render () {
     const { date } = this.state
-    // console.log("NEW TRIP STATE",this.state)
-    // console.log("NEW TRIP PROPS",this.props)
     return (
       <React.Fragment>
-        <Grid container justify='center' alignItems='center' >
-          <div className="signup">
-            <Paper style={loginStyle}>
-              <h2>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </h2>
-              <form onSubmit={this.handleSubmit}>
-                <TextField label='Trip Name:'
-                  name='name' style={{ margin: 30 }}
-                  onChange={this.changeHandler} />
-                <DateFormatInput name='date'
-                  value={date}
-                  onChange={this.changeHandlerDate}
-                  style={{ margin: 30 }} />
-                <input className="button" type="submit" style={{margin: 30}}/>
-              </form>
-            </Paper>  
-          </div>
-        </Grid>
+        {this.props.currentTraveller ?
+          <Grid container justify='center' alignItems='center' >
+            <div className="signup">
+
+              <Grid item sm={12} >
+                <img src='./main_page_logo.png' alt='logo' width='30%' />
+              </Grid>
+              <Paper style={loginStyle}>
+                <h2>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </h2>
+                <form onSubmit={this.handleSubmit}>
+                  <TextField label='Trip Name:'
+                    name='name' style={{ margin: 30 }}
+                    onChange={this.changeHandler} />
+                  <DateFormatInput name='date'
+                    value={date}
+                    onChange={this.changeHandlerDate}
+                    style={{ margin: 30 }} />
+                  <input className="button" type="submit" style={{ margin: 30 }} />
+                </form>
+              </Paper>
+            </div>
+          </Grid> :
+          <h1>Loading .....</h1>
+        }
       </React.Fragment>
     )
   }
@@ -82,7 +95,6 @@ const loginStyle = {
   // console.log(state.currentTraveller)
   return {
     currentTraveller: state.currentTraveller,
-    currentTrip: state.currentTrip
   }
 }
 

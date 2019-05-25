@@ -28,13 +28,16 @@ function UserProfile (props) {
           </Grid>
           <Grid item xs={12}>
             <Link component={EditProfile}>
-              <button className='button' color='primary' > Edit Profile</button >
+              <button id='buttonprof' color='primary' > Edit Profile</button >
             </Link>
             <Link component={MyTrips}>
-              <button className='button' color='primary' > My Trips</button >
+              <button id='buttonprof' color='primary' > My Trips</button >
+            </Link>
+            <Link component={MyTrips}>
+              <button id='buttonprof' color='primary' > My Posts</button >
             </Link>
           </Grid>
-          <Grid item xs={12} style={{ padding: 20 }}>
+          <Grid item xs={12} style={{ padding: 10 }}>
             <Typography component='h6' variant='h6'>
               {props.currentTraveller.about}
             </Typography>

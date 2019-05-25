@@ -27,7 +27,7 @@ export const styles = {
     height: 220
   },
   pictureFrame: {
-    margin: 10
+    margin: 20
   },
   navBarLinks: {
     textDecoration: 'none',

@@ -11,28 +11,29 @@ export default class Footer extends Component {
               direction='row'
               justify='center'
               alignItems='flex-end' >
-              <Grid item xs={3}>
+              <Grid item xs={1}>
                 <Link to='/'>
                Home
                 </Link>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={1}>
                 <Link to='/posts'>
                Posts
                 </Link>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={1}>
                 <Link to='/articles'>
                Articles
                 </Link>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={1}>
                 <Link to='/about'>
                About
                 </Link>
               </Grid>
+              <Grid item xs={5} />
               <br />
-              <Grid item xs={12}>
+              <Grid item xs={3} >
                 Copyright &copy;  eco-traveller.com
               </Grid>
             </Grid>
