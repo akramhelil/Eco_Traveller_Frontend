@@ -13,33 +13,34 @@ function UserProfile (props) {
   console.log(props)
   return (
     <React.Fragment>
-      <Grid container direction='column' justify='flex-end' alignItems='center' style={styles.profileCard}>
-        <Grid item sm={12}>
-          <Avatar src={props.currentTraveller.profile_photo} style={styles.avatarStyle} />
-        </Grid>
-        <Grid item sm={12}>
-          <Typography style={styles.postDeck} component='h4' variant='h4'>{props.currentTraveller.first_name} </Typography>
-          <Typography variant='subtitle1' color='textSecondary'>Posts: {props.currentTraveller.posts.length}
+      <div className='signup'>
+        <Grid container direction='column' justify='center' alignItems='center' style={styles.profileCard}>
+          <Grid item xs={12}>
+            <Avatar src={props.currentTraveller.profile_photo} style={styles.avatarStyle} />
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography style={styles.postDeck} component='h4' variant='h4'>{props.currentTraveller.first_name} </Typography>
+            <Typography variant='subtitle1' color='textSecondary'>Posts: {props.currentTraveller.posts.length}
             &nbsp;&nbsp;
           Trips: {props.currentTraveller.trips.length}
-          </Typography>
-        </Grid>
-        <Grid item >
-          <Link component={EditProfile}>
-            <button className='button' color='primary' > Edit Profile</button >
-          </Link>
-          <Link component={MyTrips}>
-            <button className='button' color='primary' > My Trips</button >
-          </Link>
-        </Grid>
-        <div className='signup'>
-          <Grid item style={{ padding: 20 }}>
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Link component={EditProfile}>
+              <button className='button' color='primary' > Edit Profile</button >
+            </Link>
+            <Link component={MyTrips}>
+              <button className='button' color='primary' > My Trips</button >
+            </Link>
+          </Grid>
+          <Grid item xs={12} style={{ padding: 20 }}>
             <Typography component='h6' variant='h6'>
               {props.currentTraveller.about}
             </Typography>
           </Grid>
-        </div>
-      </Grid>
+        </Grid>
+      </div>
     </React.Fragment>
   )
 }

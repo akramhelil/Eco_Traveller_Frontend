@@ -19,9 +19,6 @@ const loginStyle = {
    state = {
       date: '',
      name: ''
-    
-      // this current trip will be pulled from Redux currentTrtip
-      // currentTrip: null
     }
 
   changeHandlerDate = (date) => {

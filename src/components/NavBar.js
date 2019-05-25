@@ -37,9 +37,8 @@ class NavBar extends Component {
       <React.Fragment>
         <Grid container>
           <Grid item xs={12}>
-
             <div className={classes.root}>
-              <AppBar position='static' style={{ background: '#4CAF50' }}>
+              <AppBar  style={{ background: '#4CAF50' }}>
                 <Toolbar>
                   <IconButton className={classes.menuButton} color='inherit' aria-label='Menu'>
                     <Link component={RouterLink} to='/' color='inherit'>
@@ -93,7 +92,7 @@ function mapStateToProps (state) {
   // console.log(state.currentTrip)
   return {
     currentTraveller: state.currentTraveller
-      // state.currentTraveller.trips.last ? state.currentTraveller.trips.last : null
+
   }
 }
 

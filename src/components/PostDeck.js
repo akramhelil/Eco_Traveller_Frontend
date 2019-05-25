@@ -1,19 +1,16 @@
 import React, { Component } from 'react'
 import PostCard from '../containers/PostCard'
 import Grid from '@material-ui/core/Grid'
-import { styles } from '../style/MateilizeStyle'
 import { connect } from 'react-redux'
 class PostDeck extends Component {
   render () {
-    // console.log(this.props)
     return (
       <React.Fragment>
-        <Grid container style={styles.postDeck}>
-          {
-            this.props.posts.slice(0, 4).map((post) => {
+        <Grid container >
+          {this.props.posts
+            ? this.props.posts.slice(0, 8).map((post) => {
               return <PostCard post={post} key={post.id} />
-            })
-          }
+            }) : <h1>Loading ...</h1>}
         </Grid>
       </React.Fragment>
     )

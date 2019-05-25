@@ -28,10 +28,23 @@ function reducer (state = initialState, action) {
         ...state,
         currentTrip: action.payload
       }
+    case 'SET_CURRENT_TRIP':
+      return {
+        ...state,
+        currentTrip: state.trips.map(trip => {
+          return trip.id === action.payload.id
+        })
+      }
     case 'FETCH_POSTS':
       return {
         ...state,
         posts: action.payload
+      }
+    case 'ADD_POST':
+      return {
+
+        ...state,
+        posts: [...state.posts, action.payload.post ]
       }
     case 'UPDATE_PROFILE':
       return {
@@ -42,6 +55,20 @@ function reducer (state = initialState, action) {
       return {
         ...state,
         trips: action.payload
+      }
+    case 'UPDATE_SAD':
+      return {
+        ...state,
+        posts: state.posts.map(post => {
+          return post.id === action.payload.id ? { ...post, likes: action.payload.likes } : post
+        })
+      }
+    case 'DELETE_POST':
+      return {
+        ...state,
+        posts: state.posts.filter(post => {
+          return post.id !== action.payload.id 
+})
       }
     default:
       return state

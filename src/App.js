@@ -17,8 +17,6 @@ import EditProfile from './containers/EditProfile'
 import Grid from '@material-ui/core/Grid'
 import { adapter } from './adapter'
 import { connect } from 'react-redux'
-import Paper from '@material-ui/core/Paper'
-import { styles } from './style/MateilizeStyle'
 
 class App extends React.Component {
   componentDidMount () {
@@ -37,14 +35,16 @@ class App extends React.Component {
     }
   }
   render () {
-    // console.log(this.props.dispatch)
     return (
       <React.Fragment>
         <Grid container>
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{ marginTop: 80 }}>
             <NavBar />
             <Switch>
-              <Route path='/editprofile' render={(props) => { return <EditProfile {...this.props.currentTraveller} /> }} />
+              <Route path='/editprofile' render={(props) => {
+                return <EditProfile {...this.props.currentTraveller} {...props}
+                />
+              }} />
               <Route path='/trips' component={Trips} />
               <Route path='/signup' component={Signup} />
               <Route path='/articles' component={Articles} />
@@ -55,11 +55,9 @@ class App extends React.Component {
               <Route path='/posts' component={PostDeck} />
               <Route exact path='/' component={Welcome} />
             </Switch>
-          </Grid>
-          <Grid item sm={12} style={styles.footer}>
-            <Paper>
+            <Grid item xs={12}>
               <Footer />
-            </Paper>
+            </Grid>
           </Grid>
         </Grid>
       </React.Fragment>

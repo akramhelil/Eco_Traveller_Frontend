@@ -53,8 +53,7 @@ import { connect } from 'react-redux'
         <Grid item >
           <Paper style={styles.paper}>
             <div className="signup">
-              <img src="../logo.png" alt="login" width='300' />
-              <h1>Log In</h1>
+              <img src="../main_page_logo.png" alt="login" width='300' />
             <form onSubmit={this.handleSubmit}>
                   <TextField name='username' label='User Name:' onChange={this.changeHandler} value={this.state.username}/>
               <br />

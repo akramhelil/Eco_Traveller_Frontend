@@ -52,11 +52,15 @@ import { connect } from 'react-redux'
    }
    
    setCurrentUser = (response) => {
-     this.props.dispatch({type: 'SIGN_UP',payload: response.traveller})
-     localStorage.setItem("token", response.token)
-         // go back to the main page
-      this.props.history.push(`/`)
-  }
+     if (response.errors) {
+      alert(response.errors)  
+     } else {
+       this.props.dispatch({type: 'SIGN_UP',payload: response.traveller})
+       localStorage.setItem("token", response.token)
+           // go back to the main page
+        this.props.history.push(`/`)
+    }
+     }
 
   render() {
     // console.log('Popps SignUp', this.props.currentTraveller)

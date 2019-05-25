@@ -8,28 +8,40 @@ import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisf
 import IconButton from '@material-ui/core/IconButton'
 import DeleteIcon from '@material-ui/icons/Delete'
 import { connect } from 'react-redux'
+import { adapter } from '../adapter';
 
 class PostCard extends React.Component {
+
+
   handleSad = (id) => {
-    console.log('SAD FACE',id)
+    adapter.updateLikes(id, this.props.post.likes)
+    .then(res => this.props.dispatch({type: 'UPDATE_SAD', payload: res}))
   }
+
+  handleDelete = (id) => {
+    console.log('Delete Clicked', id)
+    adapter.deletePost(id)
+    .then(deletedPost => this.props.dispatch({type: 'DELETE_POST', payload: deletedPost}))
+  }
+
+
   render () {
     return (
       <React.Fragment>
         <Grid item style={styles.postCard} xs>
             <div className="signup">
           <Card style={{ margin: 5 }}>
-            <h3>{this.props.post.title.slice(0, 25)}...</h3>
+            <h3>{this.props.post.title.slice(0,25)}...</h3>
             <img src={this.props.post.img_url} alt='cards' height='240' width='240' />
             <CardContent>
-              <p>{this.props.post.content.slice(0, 25)}...</p>
+              <p>{this.props.post.content.slice(0,25)}...</p>
               <IconButton onClick={()=>this.handleSad(this.props.post.id)}>
                 <SentimentDissatisfiedIcon />
               </IconButton>
               <div style={{ padding: 5, fontSize: 18, display: 'inline', fontDecoration: 'bold' }}>{this.props.post.likes}</div>
-              <IconButton>
+                <IconButton onClick={() => this.handleDelete(this.props.post.id)}>
                 <DeleteIcon />
-              </IconButton>
+                </IconButton>
               <p> Trip: {this.props.post.trip.name}</p>
             </CardContent>
           </Card>

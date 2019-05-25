@@ -11,14 +11,14 @@ function Welcome (props) {
   return (
     <React.Fragment>
       <Grid container >
-        <Grid item sm={3}>
+        <Grid item xs={3} style={styles.profileCard}>
           <SideBar currentTraveller={props.currentTraveller} />
         </Grid>
-        <Grid item sm={9} >
+        <Grid item xs={9} >
           <Paper style={styles.pictureFrame}>
             <PictureFrame />
           </Paper>
-          <Grid item style={styles.postDeck} >
+          <Grid item xs={12} style={styles.postDeck} >
             <PostDeck />
           </Grid>
         </Grid>
@@ -30,7 +30,8 @@ function Welcome (props) {
 function mapStateToProps (state) {
   // console.log(state.currentTraveller)
   return {
-    currentTraveller: state.currentTraveller
+    currentTraveller: state.currentTraveller,
+    posts: state.posts
   }
 }
 export default connect(mapStateToProps)(Welcome)

@@ -7,30 +7,27 @@ export const styles = {
     flexGrow: 1
   },
   menuButton: {
-    marginLeft: -12,
-    marginRight: 20
+    marginLeft: -12
   },
   profileCard: {
-    margin: 10
+    marginTop: 10,
+    itemAlign: 'center'
   },
   postDeck: {
     margin: 10,
     itemAlign: 'center'
   },
   postCard: {
+    margin: 5,
     itemAlign: 'center'
   },
   avatarStyle: {
-    margin: 10,
-    width: 200,
-    height: 200
-  },
-  footer: {
-    margin: 0,
-    textDecoration: 'none'
+    marginTop: 20,
+    width: 220,
+    height: 220
   },
   pictureFrame: {
-    margin: 20
+    margin: 10
   },
   navBarLinks: {
     textDecoration: 'none',
@@ -55,6 +52,9 @@ export const styles = {
     marginLeft: 140,
     paddingTop: 20
   },
+  sideBar: {
+    margin: 10
+  },
   card: {
     display: 'flex'
   },
@@ -66,14 +66,11 @@ export const styles = {
     flex: '1 0 auto'
   },
   cover: {
-    width: 151
+    width: 150
   },
   controls: {
     display: 'flex',
     alignItems: 'center'
-  },
-  playIcon: {
-    height: 38,
-    width: 38
   }
+
 }

@@ -55,15 +55,25 @@ textarea {
 }
 
 footer {
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   background: #4CAF50;
   color: white;
   text-decoration: none;
   font-size: 18px;
+  bottom: 0;
+  position: flex ;
+  width: 100%;
+  min-height: 0vh;
+  flex-direction: column;
 }
 a {
-  color: white;
+  color:white;
+}
+#articlelink {
+  color: black;
 }
 
-
+picture {
+ margin: 
+}
 /* SIDE BAR */

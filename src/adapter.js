@@ -63,15 +63,14 @@ export const adapter = {
     })
       .then(res => res.json())
   },
-  deletePost: () => {
-    // fetch delete post action
 
+  deletePost: (id) => {
+    return fetch(`http://localhost:4000/posts/${id}`, {
+      method: 'delete'
+    })
+      .then(res => res.json())
   },
 
-  deleteTrip: () => {
-    // fetch delete trip action
-
-  },
   deleteTraveller: () => {
     // fetch to the delete traveller action
   },
@@ -98,6 +97,22 @@ export const adapter = {
       })
     })
       .then(res => res.json())
+  },
+  updateLikes: (id, likes) => {
+    return fetch(`http://localhost:4000/posts/${id}`, {
+      method: 'PATCH',
+      headers:
+          { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        likes: likes++
+      })
+    })
+      .then(res => res.json())
   }
+  // getArticles: () => {
+  //   return fetch(articlesURL)
+  //     .then(res => res.json())
+  //     .then(console.log)
+  // }
 
 }// end of the Adapter

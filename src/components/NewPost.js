@@ -45,9 +45,12 @@ import MenuItem from '@material-ui/core/MenuItem';
   handleSubmit = (e) => {
     e.preventDefault()
     adapter.createPost(this.state)
-      .then(console.log)
-      this.props.history.push(`/`)
+      .then(response => this.renderNewPost(response))
   }
+   
+  setCurrentTrip = (id) => {
+    this.props.dispatch({type: 'SET_CURRENT_TRIP', payload: id})
+   }
 
   changeHandler = (e) => {
     this.setState({
@@ -63,11 +66,10 @@ import MenuItem from '@material-ui/core/MenuItem';
     this.setState({ open: true });
   };
 
-   handleSelectChange = (e) => {
+  handleSelectChange = (e) => {
     this.setState({
       trip_id: e.target.value,
-    })
-     
+    },()=> this.setCurrentTrip(this.state.trip_id))
   }
 
    dropDownList = () => {
@@ -80,11 +82,14 @@ import MenuItem from '@material-ui/core/MenuItem';
    }
      
 
-  //  addNewPost = () => {
-  //   //  dispatch this post as ADD POST Action type to the Redux where it needs to go. 
-  //  }
+   renderNewPost = (newPost) => {
+     console.log(newPost)
+     this.props.dispatch({type: 'ADD_POST', payload: newPost})
+     this.props.history.push('/')
+   }
   
    render() {
+     console.log(this.state)
     return (
       <React.Fragment>
         <Grid container justify='center' alignItems='center'>

@@ -75,7 +75,8 @@ class EditProfile extends Component {
        ).open()
        }
        
-       setCurrentUser = (response) => {
+  setCurrentUser = (response) => {
+         console.log(response)
          this.props.dispatch({type: 'UPDATE_PROFILE',payload: response.traveller})
          localStorage.setItem("token", response.token)
              // go back to the main page
