@@ -27,12 +27,12 @@
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 8px;
+  padding: 10px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: bold;
   display: inline-block;
-  font-size: 12px;
-  margin: 8px;
+  font-size: 14px;
+  margin: 10px;
   border-radius:4px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */

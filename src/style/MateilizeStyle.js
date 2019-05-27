@@ -71,6 +71,14 @@ export const styles = {
   controls: {
     display: 'flex',
     alignItems: 'center'
+  },
+  postfeedleft: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 150,
+    position: 'fixed',
+    width: 500,
+    height: 400
   }
 
 }

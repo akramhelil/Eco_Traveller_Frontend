@@ -3,7 +3,8 @@ const initialState = {
   currentTraveller: null,
   currentTrip: null,
   posts: [],
-  trips: []
+  trips: [],
+  login: false
 }
 
 function reducer (state = initialState, action) {
@@ -11,17 +12,26 @@ function reducer (state = initialState, action) {
     case 'SIGN_UP':
       return {
         ...state,
-        currentTraveller: action.payload
+        currentTraveller: action.payload,
+        login: true
       }
     case 'LOG_IN':
       return {
         ...state,
-        currentTraveller: action.payload
+        currentTraveller: action.payload,
+        login: true
+      }
+    case 'LOG_OUT':
+      return {
+        ...state,
+        currentTraveller: null,
+        login: false
       }
     case 'AUTO_LOGIN':
       return {
         ...state,
-        currentTraveller: action.payload
+        currentTraveller: action.payload,
+        login: true
       }
     case 'NEW_TRIP':
       return {
@@ -63,12 +73,19 @@ function reducer (state = initialState, action) {
           return post.id === action.payload.id ? { ...post, likes: action.payload.likes } : post
         })
       }
+    case 'UPDATE_POST':
+      return {
+        ...state,
+        posts: state.posts.map(post => {
+          return post.id === action.payload.id ? action.payload : post
+        })
+      }
     case 'DELETE_POST':
       return {
         ...state,
         posts: state.posts.filter(post => {
-          return post.id !== action.payload.id 
-})
+          return post.id !== action.payload.id
+        })
       }
     default:
       return state

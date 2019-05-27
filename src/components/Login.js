@@ -45,8 +45,7 @@ import { connect } from 'react-redux'
   }
 
    render() {
-    //  console.log('Popps Login', this.props.currentTraveller)
-    //  console.log('USER LOGIN INFO',this.state)
+
     return (
       <React.Fragment>
         <Grid container direction="column" alignItems="center" >
@@ -74,7 +73,8 @@ import { connect } from 'react-redux'
  function mapStateToProps(state) {
   // console.log(state.currentTraveller)
   return {
-    currentTraveller: state.currentTraveller
+    currentTraveller: state.currentTraveller,
+    login: state.login
     // currentTrip: state.currentTraveller.trips[-1] ? state.currentTraveller.trips[-1] : null
   }
 }

@@ -13,6 +13,7 @@ import Articles from './containers/Articles'
 import NewTrip from './components/NewTrip'
 import Trips from './containers/Trips'
 import EditProfile from './containers/EditProfile'
+import PostFeed from './components/PostFeed'
 
 import Grid from '@material-ui/core/Grid'
 import { adapter } from './adapter'
@@ -46,13 +47,14 @@ class App extends React.Component {
                 />
               }} />
               <Route path='/trips' component={Trips} />
+              <Route path='/myposts' component={Trips} />
               <Route path='/signup' component={Signup} />
               <Route path='/articles' component={Articles} />
               <Route path='/about' component={About} />
               <Route path='/login' component={Login} />
               <Route path='/newpost' component={NewPost} />
               <Route path='/newtrip' component={NewTrip} />
-              <Route path='/posts' component={PostDeck} />
+              <Route path='/posts' component={PostFeed} />
               <Route exact path='/' component={Welcome} />
             </Switch>
             <Grid item xs={12}>

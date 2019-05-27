@@ -102,17 +102,29 @@ export const adapter = {
     return fetch(`http://localhost:4000/posts/${id}`, {
       method: 'PATCH',
       headers:
-          { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Authorization': 'likes' },
       body: JSON.stringify({
         likes: likes++
       })
     })
       .then(res => res.json())
+  },
+  updatePost: (id, data) => {
+    // console.log(data)
+    return fetch(`http://localhost:4000/posts/${id}`, {
+      method: 'PATCH',
+      headers:
+          { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        title: data.title,
+        content: data.content
+      })
+    })
+      .then(res => res.json())
+      // .then(res => console.log('Adapter', res))
   }
-  // getArticles: () => {
-  //   return fetch(articlesURL)
-  //     .then(res => res.json())
-  //     .then(console.log)
-  // }
 
 }// end of the Adapter

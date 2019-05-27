@@ -39,32 +39,7 @@ export const articles = [
     'publishedAt': '2019-05-24T20:26:55Z',
     'content': 'Hundreds of thousands of youth worldwide are participating in a school strike, demanding action on climate change, heeding a call by Swedish teenager Greta Thunberg to hold demonstrations across the world on Friday.\r\nTeenagers on the streets of Paris warned g… [+3830 chars]'
   },
-  {
-    'source': {
-      'id': null,
-      'name': 'Thoughtcatalog.com'
-    },
-    'author': 'Callie Byrnes',
-    'title': '10 Books To Devour This Memorial Day Weekend',
-    'description': 'Memorial Day weekend is the perfect time to sit back, relax, and dig into the pile of unread books you’ve been meaning to get to — or, you know, to buy a whole new book to devour instead.',
-    'url': 'https://thoughtcatalog.com/callie-byrnes/2019/05/10-books-to-devour-this-memorial-day-weekend/',
-    'urlToImage': 'https://thoughtcatalog.files.wordpress.com/2019/05/booksbooksbooks.jpg?w=1200&resize=1200,681&quality=95&strip=all&crop=1',
-    'publishedAt': '2019-05-24T20:19:36Z',
-    'content': 'Memorial Day weekend is the perfect time to sit back, relax, and dig into the pile of unread books youve been meaning to get to or, you know, to buy a whole new book to devour instead.\r\nHere are our page-turning picks to keep you preoccupied all weekend long.… [+7799 chars]'
-  },
-  {
-    'source': {
-      'id': null,
-      'name': 'Nzherald.co.nz'
-    },
-    'author': 'newsfeeds@nzherald.co.nz',
-    'title': "Inside Jamie Oliver's lavish lifestyle and multimillion-dollar home",
-    'description': "Jamie Oliver's business is in big trouble.But judging by his multimillion-dollar assets and massive personal wealth, the British celebrity chef will be just fine.The 43-year-old has a net worth of $440 million (240 million pounds),...",
-    'url': 'https://www.nzherald.co.nz/lifestyle/news/article.cfm?c_id=6&objectid=12234292',
-    'urlToImage': 'https://www.nzherald.co.nz/resizer/6JFvcsiFkh_KYPuRrtLatqltMKY=/1200x0/smart/filters:quality(70)/arc-anglerfish-syd-prod-nzme.s3.amazonaws.com/public/KDLSP3PPWFBRFHYI2SJH7SMSFY.jpg',
-    'publishedAt': '2019-05-24T20:11:13Z',
-    'content': "Jamie Oliver's business is in big trouble.\r\n But judging by his multimillion-dollar assets and massive personal wealth, the British celebrity chef will be just fine.\r\n The 43-year-old has a net worth of $440 million (240 million pounds), and prior to news tha… [+4758 chars]"
-  },
+
   {
     'source': {
       'id': null,
@@ -662,6 +637,526 @@ export const articles = [
     'urlToImage': 'https://www.irishtimes.com/image-creator/?id=1.3903473&origw=1440',
     'publishedAt': '2019-05-24T16:42:33Z',
     'content': 'The High Court has set aside An Bord Pleanálas grant of planning permission for the construction of an electricity generating biogas facility in Co Meath.\r\nIn a judgment on Friday, Mr Justice Garrett Simons quashed the boards decision of June 9th, 2016 granti… [+2700 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Plymouthherald.co.uk'
+    },
+    'author': 'William Telford',
+    'title': 'Extinction Rebellion holds musical protest outside Plymouth bank',
+    'description': 'Protesters from across Devon and Cornwall form choir and perform outside city centre branch of Barclays to highlight climate change',
+    'url': 'https://www.plymouthherald.co.uk/news/business/extinction-rebellion-holds-musical-protest-2908214',
+    'urlToImage': 'https://i2-prod.plymouthherald.co.uk/news/business/article2908221.ece/ALTERNATES/s1200/2_ER1jpeg.jpg',
+    'publishedAt': '2019-05-25T16:15:05Z',
+    'content': 'Dozens of climate change protesters set up camp outside a Plymouth city centre bank handing out leaflets and even singing.\r\nThe Extinction Rebellion choir assembled from around Devon and Cornwall to belt out tunes including their own version of the Supremes S… [+3598 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Investmentwatchblog.com'
+    },
+    'author': 'alexmark',
+    'title': 'Proposal in Europe to Kill Air Traffic Due to Global Warming',
+    'description': null,
+    'url': 'https://www.investmentwatchblog.com/proposal-in-europe-to-kill-air-traffic-due-to-global-warming/',
+    'urlToImage': null,
+    'publishedAt': '2019-05-25T16:09:47Z',
+    'content': 'by Martin Armstrong\r\nQUESTION: Dear Martin,This was my first WEC and it was an overwhelming amount of impressions, contacts, information coming over me. Still struggling to digest it all. I did not realize beforehand so much, but creating contacts with like-m… [+1266 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Truthout.org'
+    },
+    'author': 'Anton Woronczuk',
+    'title': 'Carbon Credits For Forest Preservation May Be Worse Than Nothing',
+    'description': "There's no evidence that carbon credts have — or will — deliver the climate benefit they promise.",
+    'url': 'https://truthout.org/articles/carbon-credits-for-forest-preservation-may-be-worse-than-nothing/',
+    'urlToImage': 'https://truthout.org/wp-content/uploads/2019/05/35834076166_756ca63183_k-1200x797.jpg',
+    'publishedAt': '2019-05-25T16:03:09Z',
+    'content': 'Rio Branco, Brazil— The state of Acre, on the western edge of Brazil, is so remote, there’s a national joke that it doesn’t exist. But for geochemist Foster Brown, it’s the center of the universe, a place that could help save the world.\r\n“This is an example o… [+32044 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Thestar.com'
+    },
+    'author': 'Alex Ballingall - Ottawa Bureau',
+    'title': 'What do a Caribbean reef and Ontario wetlands have in common?',
+    'description': 'From Mexico to southwestern Ontario, new programs are emerging to pay people to restore natural features that are barriers to increasingly severe weather events.',
+    'url': 'https://www.thestar.com/politics/federal/2019/05/25/what-do-a-caribbean-reef-and-ontario-wetlands-have-in-common.html',
+    'urlToImage': 'https://images.thestar.com/qxONx82_aAD1bf41_GX8qEXjLPI=/1200x759/smart/filters:cb(1558734525178)/https://www.thestar.com/content/dam/thestar/politics/federal/2019/05/25/what-do-a-caribbean-reef-and-ontario-wetlands-have-in-common/bryan_gilvesy.jpg',
+    'publishedAt': '2019-05-25T16:00:00Z',
+    'content': 'But the best thing about the grass, the promise Gilvesy thinks it represents, is this: he gets paid to restore and maintain it. \r\n“We’re trying to get farmers in the mindspace that their farm produces more than just the food and fibre that they’re traditional… [+6879 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Investmentwatchblog.com'
+    },
+    'author': 'alexmark',
+    'title': 'Canada’s Oil Hotspot Considers Going Nuclear',
+    'description': null,
+    'url': 'https://www.investmentwatchblog.com/canadas-oil-hotspot-considers-going-nuclear/',
+    'urlToImage': null,
+    'publishedAt': '2019-05-25T15:54:07Z',
+    'content': 'By Haley Zaremba\r\nCanadas oil sands produce some of the dirtiest oil on the planet. Their abnormally high carbon emissions have earned Albertan oil a soiled reputation not just among environmentalists, but among many politicians and their constituents as well… [+4116 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Crooksandliars.com'
+    },
+    'author': 'Scarce',
+    'title': 'Supporters Of Splitting Washington To Form 51st State Hold Bake Sale Fundraiser',
+    'description': "That's almost word-for-word the Associated Press headline. These wack-a-doodles honestly believe that they can split up Washington State (and parts of Idaho, Wyoming, Oregon, and Montana) to create some kind Christianist sanctuary state, because the United St…",
+    'url': 'https://crooksandliars.com/2019/05/supporters-splitting-washington-form-51st',
+    'urlToImage': 'https://crooksandliars.com/files/primary_image/19/05/liberty-state-matt-shea.jpg',
+    'publishedAt': '2019-05-25T15:47:38Z',
+    'content': "That's almost word-for-word the Associated Press headline. These wack-a-doodles honestly believe that they can split up Washington State (and parts of Idaho, Wyoming, Oregon, and Montana) to create some kind Christianist sanctuary state, because the United St… [+1259 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Patheos.com'
+    },
+    'author': 'Hemant Mehta',
+    'title': 'WA Lawmaker Attends Fundraiser for Liberty, a Proposed 51st State for Christians',
+    'description': "If this means conservative Christians would move away from the rest of us, I'm all for it.",
+    'url': 'https://friendlyatheist.patheos.com/2019/05/25/wa-lawmaker-attends-fundraiser-for-liberty-a-proposed-51st-state-for-christians/',
+    'urlToImage': 'https://wp-media.patheos.com/subdomain/sites/8/2019/05/LibertyStateFund-768x432.jpg',
+    'publishedAt': '2019-05-25T14:00:15Z',
+    'content': 'On Thursday night, a group of people gathered in Washington state to raise money for their campaign to create Liberty, a 51st state specifically made for conservative Christians. \r\nI guess they’ve never heard of Alabama. \r\nLiberty would span several states in… [+2835 chars]'
+  },
+  {
+    'source': {
+      'id': 'cbc-news',
+      'name': 'CBC News'
+    },
+    'author': 'Maryse Zeidler',
+    'title': 'Haida Gwaii village aims to eliminate diesel by turning to renewable energy',
+    'description': 'The Village of Queen Charlotte recently issued a request for proposals to study options that will reduce its greenhouse gas emissions by using solar, wind or hydro instead.',
+    'url': 'https://www.cbc.ca/news/canada/british-columbia/haida-gwaii-village-aims-to-eliminate-diesel-by-turning-to-renewable-energy-1.5149383',
+    'urlToImage': 'https://i.cbc.ca/1.5057508.1552608117!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/queen-charlotte-city.jpg',
+    'publishedAt': '2019-05-25T14:00:00Z',
+    'content': "A small village on British Columbia's picturesque Haida Gwaii wants to replace the diesel fuel it relies on with renewable energy.\r\nThe Village of Queen Charlotte, which has about 850 residents, recently issued a request for proposals for engineering companie… [+2298 chars]"
+  },
+  {
+    'source': {
+      'id': 'business-insider',
+      'name': 'Business Insider'
+    },
+    'author': 'Julie Bort',
+    'title': "An Amazon employee explains why thousands of workers want the company to stop selling cloud services to oil companies, just like it won't sell guns (AMZN)",
+    'description': 'Earlier this week, Amazon employees submitted a shareholder proposal and held a press conference calling for the company to become a leader in sustainability by vowing to quickly reduce its carbon footprint in line with recommendations by climate scientists. …',
+    'url': 'https://www.businessinsider.com/amazon-employee-explains-climate-change-protest-2019-5',
+    'urlToImage': 'https://amp.businessinsider.com/images/5ce863da11e205046e0f2cf5-1920-960.jpg',
+    'publishedAt': '2019-05-25T13:45:00Z',
+    'content': "Back in February, a group of Amazon's tech workers were openly circulating the draft of a letter they planned to publish on the internet. The letter was pushing their employer, one of the largest tech companies in the world, to turn itself into an example on … [+8997 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Commondreams.org'
+    },
+    'author': null,
+    'title': "\"They'll Give Me a Detention but It'll Be Worth It\"—A Climate Scientist Interviews His Climate Striking Daughter",
+    'description': 'My daughter feels like she—and normal people like her—can make a difference... Extinction rebellion, the climate strikes, Greta Thunberg and even the BBC and Netflix have changed the conversation on climate change. Even more than I expected – there’s now a gr…',
+    'url': 'https://www.commondreams.org/views/2019/05/25/theyll-give-me-detention-itll-be-worth-it-climate-scientist-interviews-his-climate',
+    'urlToImage': 'https://www.commondreams.org/sites/default/files/views-article/thumbs/climate-scientist-interview-daughter.jpg',
+    'publishedAt': '2019-05-25T13:41:02Z',
+    'content': 'Extinction rebellion, the climate strikes, Greta Thunberg and even the BBC and Netflix have changed the conversation on climate change. Even more than I expected theres now a groundswell of public concern that human impact on the planet is unacceptable and we… [+3592 chars]'
+  },
+  {
+    'source': {
+      'id': 'cbc-news',
+      'name': 'CBC News'
+    },
+    'author': 'Lindsay Bird',
+    'title': '4 ways to talk to people about plastic, without sounding like a jerk',
+    'description': 'A little social etiquette can go a long way when talking about the environment.',
+    'url': 'https://www.cbc.ca/news/canada/newfoundland-labrador/environmental-etiquette-single-use-plastic-tips-1.5143587',
+    'urlToImage': 'https://i.cbc.ca/1.5140493.1558111380!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/plastic-bottles.jpg',
+    'publishedAt': '2019-05-25T13:30:14Z',
+    'content': "Waves of Change is a CBC series exploring the single-use plastic we're discarding, and why we need to clean up our act. You can be part of the community discussion by joining our Facebook group.\r\nStop me if you've heard this one before: \r\nHow do you find a ve… [+6272 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Theroot.com'
+    },
+    'author': 'Michael Harriot',
+    'title': 'The Official Rules for the 2019 Cookout Season',
+    'description': 'As the opening day to cookout season 2019 approaches, it is the responsibility of the Black Legislative American Cookout Council (BLACC) to keep our constituents informed of the rules for the upcoming season. These guidelines have been voted on by a panel of …',
+    'url': 'https://www.theroot.com/the-official-rules-for-the-2019-cookout-season-1835014670',
+    'urlToImage': 'https://i.kinja-img.com/gawker-media/image/upload/s--BYRLTATj--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/c847jthmbvt8gpamf3x7.jpg',
+    'publishedAt': '2019-05-25T13:15:00Z',
+    'content': 'As the opening day to cookout season 2019 approaches, it is the responsibility of the Black Legislative American Cookout Council (BLACC) to keep our constituents informed of the rules for the upcoming season. These guidelines have been voted on by a panel of … [+7762 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Freerepublic.com'
+    },
+    'author': 'MOTUS A.D.',
+    'title': 'AOC Live Tweets the Weather (AKA Climate Crisis)',
+    'description': 'The climate crisis is real yall. Guess were at casual tornadoes in growing regions of the country? Like garbage disposers I guess AOC has never seen a tornado either. Not even on YouTube because there is nothing and I mean nothing casual by any definit…',
+    'url': 'https://www.freerepublic.com/focus/f-bloggers/3752037/posts',
+    'urlToImage': null,
+    'publishedAt': '2019-05-25T12:47:15Z',
+    'content': 'Skip to comments.\r\nAOC Live Tweets the Weather (AKA Climate Crisis)MOTUS A.D. ^\r\n | 5-25-19\r\n | MOTUS\r\nPosted on 05/25/2019 5:47:15 AM PDT by NOBO2012\r\n“The climate crisis is real y’all. “Guess we’re at casual tornadoes in growing regions of the country?”\r\nLi… [+5537 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Freerepublic.com'
+    },
+    'author': 'Napa Valley Register',
+    'title': 'The cost of inaction is too high (only 11.64 years left)',
+    'description': 'We need action on the climate (May 20) supports HR7763, better known as Carbon Dividends, a bill currently in the floor of Congress that would fossil fuel corporations, rather than consumers and taxpayers, responsible for the costs of fighting climate cha…',
+    'url': 'https://www.freerepublic.com/focus/f-news/3752029/posts',
+    'urlToImage': null,
+    'publishedAt': '2019-05-25T12:11:24Z',
+    'content': 'Skip to comments.\r\nThe cost of inaction is too high (only 11.64 years left)Napa Valley Register ^\r\n | 5/24/19\r\n | Lynn Goldfarb\r\nPosted on 05/25/2019 5:11:24 AM PDT by Libloather\r\n“We need action on the climate” (May 20) supports HR7763, better known as “Carb… [+3032 chars]'
+  },
+  {
+    'source': {
+      'id': 'the-irish-times',
+      'name': 'The Irish Times'
+    },
+    'author': 'Pat Leahy',
+    'title': 'Elections 2019: Green wave sees tide go out for Varadkar and Sinn Féin',
+    'description': 'Analysis: FG and FF have been spinning furiously but there’s no spinning out of this',
+    'url': 'https://www.irishtimes.com/news/politics/elections-2019-green-wave-sees-tide-go-out-for-varadkar-and-sinn-f%C3%A9in-1.3904618',
+    'urlToImage': 'https://www.irishtimes.com/image-creator/?id=1.3904617&origw=1440',
+    'publishedAt': '2019-05-25T11:46:43Z',
+    'content': 'For some time now, it has been one of the obvious questions about Irish politics: why, at a time of unprecedented public concern about the environment and awareness about the threat posed by global warming, has political support for the Green Party not been s… [+6181 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Infowars.com'
+    },
+    'author': 'Steve Watson',
+    'title': 'Young People Are Increasingly Blaming “Climate Change” For Not Saving For Retirement',
+    'description': 'Some people just want to watch the world burn.',
+    'url': 'https://www.infowars.com/young-people-are-increasingly-blaming-climate-change-for-not-saving-for-retirement/',
+    'urlToImage': 'https://assets.infowars.com/2017/07/climate-change-earth-global-.jpg',
+    'publishedAt': '2019-05-25T11:34:40Z',
+    'content': 'An increasing number of younger Americans are blaming climate change for not putting away money for their own retirement.  They say that because the world won’t exist when they retire (because of climate change) there’s no need to save any money.\r\nBut if we a… [+3958 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Psychologytoday.com'
+    },
+    'author': 'Douglas Vakoch Ph.D.',
+    'title': 'Deceiving Ourselves About Global Warming?',
+    'description': 'Researchers suggest cognitive biases affect assessments of the impact of greenhouse gases, but new study results may instead reflect limited scientific background of participants.',
+    'url': 'https://www.psychologytoday.com/ca/blog/home-in-the-cosmos/201905/deceiving-ourselves-about-global-warming',
+    'urlToImage': 'https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full/public/field_blog_entry_teaser_image/2019-05/adobestock_196117554.jpeg?itok=mSU8S1y0',
+    'publishedAt': '2019-05-25T10:52:36Z',
+    'content': 'Many people believe that if we maintain our current level of human-made carbon dioxide (CO2) emissions, and we dont increase these emissions in the future, a safe equilibrium of CO2 levels can be reached. However, this overlooks the fact that as long as more … [+11281 chars]'
+  },
+  {
+    'source': {
+      'id': 'fortune',
+      'name': 'Fortune'
+    },
+    'author': 'Rachel King',
+    'title': 'English and Welsh Sparkling Wines Are Sparking a New Wave for Bubbles',
+    'description': 'When thinking of sparkling wine regions, locales like Italy (prosecco), Spain, (cava), and France (Champagne, of course), are usually top of mind. Certainly, there are numerous producers of sparkling wine around the world, but the next big hotspot for bubbles…',
+    'url': 'http://fortune.com/longform/english-sparkling-wine/',
+    'urlToImage': 'https://fortunedotcom.files.wordpress.com/2019/05/gusbourne-vineyards-22.jpg',
+    'publishedAt': '2019-05-25T10:30:13Z',
+    'content': 'When thinking of sparkling wine regions, locales like Italy (prosecco), Spain, (cava), and France (Champagne, of course), are usually top of mind. Certainly, there are numerous producers of sparkling wine around the world, but the next big hotspot for bubbles… [+10263 chars]'
+  },
+  {
+    'source': {
+      'id': 'nbc-news',
+      'name': 'NBC News'
+    },
+    'author': 'Seth Shostak',
+    'title': 'Space aliens are breeding with humans, university instructor says. Scientists say otherwise.',
+    'description': 'University of Oxford instructor Young-hae Chi says space aliens are breeding with humans to create heat-resistant hybrids who can survive climate change.',
+    'url': 'https://www.nbcnews.com/mach/science/space-aliens-are-breeding-humans-university-instructor-says-scientists-say-ncna1008971',
+    'urlToImage': 'https://media1.s-nbcnews.com/j/newscms/2019_21/2867106/190522-stock-motion-blur-commuters-ew-351p_2706496da2e0123a2b95098463a35937.nbcnews-fp-1200-630.jpg',
+    'publishedAt': '2019-05-25T10:15:56Z',
+    'content': "May 25, 2019, 10:15 AM UTC\r\nMaybe you've never seen any space aliens, but recent polls indicate that up to 6 percent of Americans claim to have been abducted by them. The experience doesn't sound pleasant. The extraterrestrials are often said to take their ca… [+4724 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Business-standard.com'
+    },
+    'author': 'Reuters',
+    'title': 'No Planet B, say teen activists as 1.8 mn join global climate change strike',
+    'description': "Thunberg, 16, said the threat of societal breakdown posed by runaway climate change should overshadow every other campaign issue in the European Union's parliamentary elections",
+    'url': 'https://www.business-standard.com/article/international/no-planet-b-say-teen-activists-as-1-8-mn-join-global-climate-change-strike-119052500545_1.html',
+    'urlToImage': 'https://bsmedia.business-standard.com/_media/bs/img/article/2018-12/18/full/1545100010-2859.jpg',
+    'publishedAt': '2019-05-25T10:06:00Z',
+    'content': 'Swedish teenage activist Greta Thunberg urged European politicians on Friday to focus on a climate crisis instead of "bickering", as children walked out of classes around the world to back her demands for urgent action to curb carbon emissions.\r\nThunberg, 16,… [+3454 chars]'
+  },
+  {
+    'source': {
+      'id': 'mashable',
+      'name': 'Mashable'
+    },
+    'author': 'Mark Kaufman',
+    'title': 'Why sea creatures are fleeing their homes',
+    'description': "There are 3,800 big thermometers floating in the ocean, and the readings don't lie: Over 90 percent of the warming created by humans is soaked up by the seas. Unsurprisingly, many creatures are feeling the heat. In new research published Wednesday in the jour…",
+    'url': 'https://mashable.com/article/marine-animals-global-warming/',
+    'urlToImage': 'https://mondrian.mashable.com/2019%252F04%252F24%252Fb3%252F565ff8b485114f939ede3703a1cdc6b3.65418.jpg%252F1200x630.jpg?signature=uJnQq-zPdeE4PLi3p_htehk1tog=',
+    'publishedAt': '2019-04-24T17:35:13Z',
+    'content': "There are 3,800 big thermometers floating in the ocean, and the readings don't lie: Over 90 percent of the warming created by humans is soaked up by the seas. Unsurprisingly, many creatures are feeling the heat. \r\nIn new research published Wednesday in the jo… [+4808 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Gizmodo.com'
+    },
+    'author': 'Brian Kahn on Earther, shared by Maddie Stone to Gizmodo',
+    'title': "Should We Be Calling Climate Change a 'Climate Crisis'?",
+    'description': 'How we talk about climate change is rapidly shifting as the ramifications of unchecked carbon pollution become ever clearer. The Guardian sped that shift along last week, when it updated its style guide to encourage reporters to refer to climate change as a “…',
+    'url': 'https://earther.gizmodo.com/should-we-be-calling-climate-change-a-climate-crisis-1834924490',
+    'urlToImage': 'https://i.kinja-img.com/gawker-media/image/upload/s--8vXEQHkp--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/occ0zo3nnmndbhbpahdr.jpg',
+    'publishedAt': '2019-05-21T20:31:00Z',
+    'content': 'How we talk about climate change is rapidly shifting as the ramifications of unchecked carbon pollution become ever clearer. The Guardian sped that shift along last week, when it updated its style guide to encourage reporters to refer to climate change as a c… [+5301 chars]'
+  },
+  {
+    'source': {
+      'id': 'mashable',
+      'name': 'Mashable'
+    },
+    'author': 'Mark Kaufman',
+    'title': 'How the warming oceans can blind sea creatures',
+    'description': "Pilots flying at high altitudes need extra oxygen, or they'll start to lose vision — and eventually pass out. Similarly, creatures dwelling in the oceans also require oxygen to see. Unfortunately for them, the seas are now gradually losing oxygen, a problemat…",
+    'url': 'https://mashable.com/article/ocean-oxygen-blindness/',
+    'urlToImage': 'https://mondrian.mashable.com/2019%252F05%252F10%252F9c%252F9bb447d313e24a838d8efc9c739f8a50.13fa6.jpg%252F1200x630.jpg?signature=76BiFrSr7NuJ-GIVUvQCGuX6H9U=',
+    'publishedAt': '2019-05-10T19:09:08Z',
+    'content': "Pilots flying at high altitudes need extra oxygen, or they'll start to lose vision and eventually pass out.\r\nSimilarly, creatures dwelling in the oceans also require oxygen to see. Unfortunately for them, the seas are now gradually losing oxygen, a problemati… [+5638 chars]"
+  },
+  {
+    'source': {
+      'id': 'mashable',
+      'name': 'Mashable'
+    },
+    'author': 'Mark Kaufman',
+    'title': 'Bill Nye uses profanity and fire to stress the enormity of climate change',
+    'description': "Bill Nye just dropped a slew of F-bombs. As a guest on the May 12 episode of Last Week Tonight With John Oliver, the storied science communicator used profanity and half-jest to make a succinct point about Earth's rising carbon dioxide emissions, which are no…",
+    'url': 'https://mashable.com/article/bill-nye-climate-change-curses/',
+    'urlToImage': 'https://mondrian.mashable.com/2019%252F05%252F13%252F81%252Fb3f271f3921f4ca7b3dd54da14fe7037.55395.png%252F1200x630.png?signature=CUXoOUYNni7-_zEv07cOaw4GgnQ=',
+    'publishedAt': '2019-05-13T21:51:56Z',
+    'content': "Bill Nye just dropped a slew of F-bombs. \r\nAs a guest on the May 12 episode of Last Week Tonight With John Oliver, the storied science communicator used profanity and half-jest to make a succinct point about Earth's rising carbon dioxide emissions, which are … [+3248 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Readwrite.com'
+    },
+    'author': 'Jeff Jones',
+    'title': 'Is Bitcoin Accelerating Our Global Warming?',
+    'description': 'The Bitcoin is by far the most popular cryptocurrency in the world. Cryptocurrencies were primarily designed to facilitate faster and more secure financial transactions over the web. They were meant to make the world a better place. However, there are worryin…',
+    'url': 'https://readwrite.com/2019/05/09/is-bitcoin-accelerating-our-global-warming/',
+    'urlToImage': null,
+    'publishedAt': '2019-05-09T18:00:56Z',
+    'content': null
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Gizmodo.com'
+    },
+    'author': 'Yessenia Funes on Earther, shared by Andrew Couts to Gizmodo',
+    'title': "The First Tribal Climate Emergency Declaration Is Here—and It Won't Be the Last",
+    'description': 'In the Arctic, people don’t have time to wait around for others to take action to stop climate change. This region of the world is warming faster than everywhere else, so they’re feeling the impacts of the global fever our planet is running much quicker than …',
+    'url': 'https://earther.gizmodo.com/the-first-tribal-climate-emergency-declaration-is-here-1835004654',
+    'urlToImage': 'https://i.kinja-img.com/gawker-media/image/upload/s--Oof3ULgK--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/figvpvdlydyrky1zn0ml.jpg',
+    'publishedAt': '2019-05-24T15:05:00Z',
+    'content': 'In the Arctic, people dont have time to wait around for others to take action to stop climate change. This region of the world is warming faster than everywhere else, so theyre feeling the impacts of the global fever our planet is running much quicker than th… [+3244 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Slashdot.org'
+    },
+    'author': 'EditorDavid',
+    'title': 'How Much Do Amazon Deliveries Contribute To Global Warming?',
+    'description': "DevNull127 quotes The New Republic: It's no coincidence that the number of trucks on the road has doubled since Amazon launched in 1994. That's a huge deal for the climate, as Vox reported last year in an article on the environmental impact of online shopping…",
+    'url': 'https://news.slashdot.org/story/19/04/29/0329240/how-much-do-amazon-deliveries-contribute-to-global-warming',
+    'urlToImage': 'https://a.fsdn.com/sd/topics/business_64.png',
+    'publishedAt': '2019-04-29T04:04:00Z',
+    'content': "It's no coincidence that the number of trucks on the road has doubled since Amazon launched in 1994. That's a huge deal for the climate, as Vox reported last year in an article on the environmental impact of online shopping: \"In 2016, transportation overtook … [+1763 chars]"
+  },
+  {
+    'source': {
+      'id': 'bbc-news',
+      'name': 'BBC News'
+    },
+    'author': 'https://www.facebook.com/bbcnews',
+    'title': "Rise in global sea levels could have 'profound consequences'",
+    'description': 'Researchers say global sea levels may rise by 2m by the end of this century, double the current predictions.',
+    'url': 'https://www.bbc.co.uk/news/science-environment-48337629',
+    'urlToImage': 'https://ichef.bbci.co.uk/news/1024/branded_news/6EC1/production/_107035382_gettyimages-472144812.jpg',
+    'publishedAt': '2019-05-20T22:17:56Z',
+    'content': "Image copyrightGetty Images\r\nScientists believe that global sea levels could rise far more than predicted, due to accelerating melting in Greenland and Antarctica, \r\nThe long-held view has been that the world's seas would rise by a maximum of just under a met… [+4339 chars]"
+  },
+  {
+    'source': {
+      'id': 'wired',
+      'name': 'Wired'
+    },
+    'author': 'Jonathan Mingle',
+    'title': 'Atmospheric Methane Levels Are Going Up—And No One Knows Why',
+    'description': "Levels of heat-trapping methane are rising faster than climate experts anticipated, triggering intense debate about why it's happening.",
+    'url': 'https://www.wired.com/story/atmospheric-methane-levels-are-going-up-and-no-one-knows-why/',
+    'urlToImage': 'https://media.wired.com/photos/5cdca4c5af643e2f373ebc3d/191:100/pass/science_refinery-fire_462840162.jpg',
+    'publishedAt': '2019-05-16T12:00:00Z',
+    'content': 'This story originally appeared on Undark and is part of the Climate Desk collaboration.\r\nEvery week dozens of metal flasks arrive at NOAAs Earth System Research Laboratory in Boulder, Colorado, each one loaded with air from a distant corner of the world. Rese… [+24577 chars]'
+  },
+  {
+    'source': {
+      'id': 'time',
+      'name': 'Time'
+    },
+    'author': 'SETH BORENSTEIN and EDITH M. LEDERER / AP',
+    'title': 'U.N. Secretary-General Warns of ‘Total Disaster’ If Global Warming Isn’t Stopped',
+    'description': 'The United Nations secretary-general António Guterres said the world must dramatically change its ways to stop future global warming.',
+    'url': 'http://time.com/5586121/un-climate-change-disaster-warming/',
+    'urlToImage': 'https://timedotcom.files.wordpress.com/2019/05/un-climate-change-disaster-warming.jpg?quality=85',
+    'publishedAt': '2019-05-08T21:04:35Z',
+    'content': 'UNITED NATIONS (AP) — The United Nations secretary-general said the world must dramatically change the way it fuels factories, vehicles and homes to limit future warming to a level scientists call nearly impossible.\r\nThat’s because the alternative “would mean… [+5254 chars]'
+  },
+  {
+    'source': {
+      'id': 'the-new-york-times',
+      'name': 'The New York Times'
+    },
+    'author': 'BRAD PLUMER',
+    'title': 'Civilization Is Accelerating Extinction and Altering the Natural World at a Pace ‘Unprecedented in Human History’',
+    'description': 'Fishing nets and ropes are a frequent hazard for olive ridley sea turtles, seen on a beach in India’s Kerala state in January. A new 1,500-page report by the United Nations is the most exhaustive look yet at the decline in biodiversity across the globe.',
+    'url': 'https://www.nytimes.com/2019/05/06/climate/biodiversity-extinction-united-nations.html',
+    'urlToImage': 'https://static01.nyt.com/images/2019/05/06/climate/06CLI-BIODIVERSITY1/06CLI-BIODIVERSITY1-facebookJumbo.jpg',
+    'publishedAt': '2019-05-06T11:00:12Z',
+    'content': 'Unless nations step up their efforts to protect what natural habitats are left, they could witness the disappearance of 40 percent of amphibian species, one-third of marine mammals and one-third of reef-forming corals. More than 500,000 land species, the repo… [+1736 chars]'
+  },
+  {
+    'source': {
+      'id': 'the-new-york-times',
+      'name': 'The New York Times'
+    },
+    'author': 'COLIN MOYNIHAN',
+    'title': 'Nxivm Trial: Former Sex Cult Official Describes Its ‘Evil’ Inner Workings',
+    'description': 'Mark Vicente, once a high-ranking member of Nxivm, described a complicated organizational structure that relied on the belief that Keith Raniere, the cult’s co-founder, was the “wisest person.”',
+    'url': 'https://www.nytimes.com/2019/05/09/nyregion/nxivm-cult-trial.html',
+    'urlToImage': 'https://static01.nyt.com/images/2019/05/10/nyregion/10sexcult-print/09sexcult-facebookJumbo.jpg',
+    'publishedAt': '2019-05-10T04:06:53Z',
+    'content': 'Mr. Raniere portrayed himself as a renunciate, or somebody who eschewed material possessions, Mr. Vicente said. But Mr. Raniere took in a percentage of profits from certain operations to finance what he called scientific research.\r\nMr. Vicente said Ms. Bronfm… [+1213 chars]'
+  },
+  {
+    'source': {
+      'id': 'wired',
+      'name': 'Wired'
+    },
+    'author': 'Michael Hardy',
+    'title': 'Dinosaurs Get Their Close-Ups in These Stunning Photos',
+    'description': 'Christian Voigt used analog and digital trickery to isolate individual dinosaurs from larger exhibitions.',
+    'url': 'https://www.wired.com/story/dinosaur-skeleton-gallery/',
+    'urlToImage': 'https://media.wired.com/photos/5cd0c2db2c90a35c66b7d9d7/191:100/pass/01_ChristianVoigt_Tyrannosaurus.jpg',
+    'publishedAt': '2019-05-07T18:50:54Z',
+    'content': "The last of the dinosaurs died off 65 million years ago, but they come roaring back to life in German photographer Christian Voigt's remarkable new series. A couple years ago, Voigt, best known for his sumptuous interior photography, was shooting inside Londo… [+2481 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Gizmodo.com'
+    },
+    'author': 'Tom McKay on Earther, shared by Tom McKay to Gizmodo',
+    'title': 'Steve King Tells Iowans Hit By Flooding Not to Worry Because Maybe All That Rain Will Make Deserts Green',
+    'description': 'On Tuesday, parts of downtown Davenport, Iowa dramatically flooded after temporary flood barriers failed to stave off the gushing Mississippi River—which has crested to near record-setting levels in parts of Iowa and Illinois after hard-hitting snowfall this …',
+    'url': 'https://earther.gizmodo.com/steve-king-tells-iowans-hit-by-flooding-not-to-worry-be-1834463499',
+    'urlToImage': 'https://i.kinja-img.com/gawker-media/image/upload/s--za_wNrCE--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/arhgrbmxedt5drbuggan.jpg',
+    'publishedAt': '2019-05-02T04:00:00Z',
+    'content': 'On Tuesday, parts of downtown Davenport, Iowa dramatically flooded after temporary flood barriers failed to stave off the gushing Mississippi Riverwhich has crested to near record-setting levels in parts of Iowa and Illinois after hard-hitting snowfall this w… [+2499 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Huffpost.com'
+    },
+    'author': "Chris D'Angelo",
+    'title': 'Interior Chief Blames Congress For His Inaction On Climate Change',
+    'description': 'David Bernhardt said there is no law mandating that he combat global warming: "You guys come up with the shalls.”',
+    'url': 'https://www.huffpost.com/entry/david-bernhardt-interior-secretary-climate-change-extinction_n_5cd1f3c9e4b0a7dffcce0468',
+    'urlToImage': 'https://img.huffingtonpost.com/asset/5cd1ff061e000055008371a8.jpeg?cache=O4pqEwJLlL&ops=1200_630',
+    'publishedAt': '2019-05-08T00:28:06Z',
+    'content': 'Taking his previous statements even further, Interior Secretary David Bernhardt told lawmakers Tuesday that he is not obligated to combat climate change because there is no law requiring that he do so.\r\nRep. Chellie Pingree (D-Maine) pressed the newly confirm… [+4800 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Malaymail.com'
+    },
+    'author': 'Malay Mail',
+    'title': 'Global sea levels could rise faster than previously predicted - Malay Mail',
+    'description': 'Global sea levels could rise faster than previously predicted Malay Mail Global sea levels could rise far more than predicted | Al Jazeera English Al Jazeera English Climate change: Global sea level rise could be bigger than expected BBC News 2-metre sea leve…',
+    'url': 'https://www.malaymail.com/news/life/2019/05/22/global-sea-levels-could-rise-faster-than-previously-predicted/1755212',
+    'urlToImage': 'https://media.malaymail.com/resize_cache/uploads/articles/2019/2019-01/20190115_Antartica_AFP-seo.jpg',
+    'publishedAt': '2019-05-22T05:00:36Z',
+    'content': 'That prediction has since been viewed as conservative, as the levels of planet-warming greenhouse gas emissions continue to rise year on year, and satellites showing accelerated rates of melt-off from massive ice sheets atop Antarctica and Greenland. AFP pic\r… [+3174 chars]'
+  },
+  {
+    'source': {
+      'id': 'mashable',
+      'name': 'Mashable'
+    },
+    'author': 'Mark Kaufman',
+    'title': 'SpaceX just blasted a critical NASA instrument into space',
+    'description': "NASA's carbon-detecting sleuth has left Earth. SpaceX launched the Orbiting Carbon Observatory-3 (OCO-3) to the International Space Station (ISS) at 2:48 a.m. ET on Saturday morning aboard the company's dependable Falcon 9 rocket. After NASA's cargo load arri…",
+    'url': 'https://mashable.com/article/spacex-nasa-oco-climate-change/',
+    'urlToImage': 'https://mondrian.mashable.com/2019%252F05%252F04%252F14%252F9e3a31655dcc4b4bb8b0fe051665ed17.c1fe1.jpg%252F1200x630.jpg?signature=kCqRJGASY5KQL5p49nrfNC2EJrI=',
+    'publishedAt': '2019-05-04T13:38:15Z',
+    'content': "NASA's carbon-detecting sleuth has left Earth.\r\nSpaceX launched the Orbiting Carbon Observatory-3 (OCO-3) to the International Space Station (ISS) at 2:48 a.m. ET on Saturday morning aboard the company's dependable Falcon 9 rocket. After NASA's cargo load arr… [+3229 chars]"
+  },
+  {
+    'source': {
+      'id': 'mashable',
+      'name': 'Mashable'
+    },
+    'author': 'Mark Kaufman',
+    'title': 'Airborne NASA scientists just filmed something troubling in Greenland',
+    'description': "Scientists aboard a NASA airplane swooped over some of Greenland's largest glaciers on Monday, spotting melted ice and raging rivers. It's significant, because though it's not nearly summer, large blue ponds have already formed on the icy ground. NASA’s Opera…",
+    'url': 'https://mashable.com/article/greenland-melt-2019-climate-change/',
+    'urlToImage': 'https://mondrian.mashable.com/2019%252F05%252F08%252Ffa%252F58443a0f564f449ebe2cb4c1cfd9a644.400f3.jpg%252F1200x630.jpg?signature=9Yr1F3vKJTXDekEUSFYORGkh66Y=',
+    'publishedAt': '2019-05-08T20:07:27Z',
+    'content': "Scientists aboard a NASA airplane swooped over some of Greenland's largest glaciers on Monday, spotting melted ice and raging rivers.\r\nIt's significant, because though it's not nearly summer, large blue ponds have already formed on the icy ground. NASAs Opera… [+4118 chars]"
+  },
+  {
+    'source': {
+      'id': 'techcrunch',
+      'name': 'TechCrunch'
+    },
+    'author': 'Natasha Lomas',
+    'title': 'Scalable, low cost technologies needed to repair climate, Cambridge professor suggests',
+    'description': 'Cambridge University has proposed setting up a research center tasked with coming up with scalable technological fixes for climate change. The proposed Center for Climate Repair is being co-ordinated by David King, an emeritus professor in physical chemistry …',
+    'url': 'http://techcrunch.com/2019/05/10/scalable-low-cost-technologies-needed-to-repair-climate-cambridge-professor-suggests/',
+    'urlToImage': 'https://techcrunch.com/wp-content/uploads/2016/11/sea_ice_terrain.jpg?w=592',
+    'publishedAt': '2019-05-10T09:18:11Z',
+    'content': 'Cambridge University has proposed setting up a research center tasked with coming up with scalable technological fixes for climate change.\r\nThe proposed Center for Climate Repair is being co-ordinated by David King, an emeritus professor in physical chemistry… [+2515 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'News.az'
+    },
+    'author': null,
+    'title': 'Latest news from Azerbaijan - News.Az',
+    'description': 'Latest news from Azerbaijan News.Az Global sea levels could rise far more than predicted | Al Jazeera English Al Jazeera English Global sea levels could rise faster than previously predicted Malay Mail Climate change: Global sea level rise could be bigger tha…',
+    'url': 'http://news.az/articles/environment/139090',
+    'urlToImage': 'https://news.az/images_470/2019/05/22/183543.jpg',
+    'publishedAt': '2019-05-22T13:04:10Z',
+    'content': 'Global sea levels could rise by more than two metres by the end of this century if emissions continue in a business as usual scenario, a United Nations body has warned, The Independent reports. \r\nThe international team of researchers said this would have “cat… [+2587 chars]'
   }
 
 ]
