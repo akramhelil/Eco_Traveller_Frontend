@@ -3,18 +3,9 @@ import BigPostCard from '../containers/BigPostCard'
 import { connect } from 'react-redux'
 import UserProfile from '../containers/UserProfile'
 import { adapter } from '../adapter'
-import { Paper, Card, Grid, CardHeader, CardMedia, CardContent, Typography } from '@material-ui/core'
+import { Paper, Grid } from '@material-ui/core'
 import { styles } from '../style/MateilizeStyle'
-import SideBar from './SideBar'
-
-const sideBar = {
-  justifyContent: 'center',
-  alignItems: 'center',
-  marginLeft: 150,
-  position: 'fixed',
-  width: 500,
-  height: 400
-}
+// import SideBar from './SideBar'
 
 class PostFeed extends Component {
   componentDidMount () {

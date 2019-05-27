@@ -1,15 +1,17 @@
 import React from 'react'
 import { articles } from '../articleData'
 import ArticleCard from '../components/ArticleCard'
+import { Grid } from '@material-ui/core'
 function Articles () {
-  console.log(articles)
   return (
     <React.Fragment>
-      {
-        articles.slice(0, 5).map(article => {
-          return <ArticleCard article={article} key={article.author.slice(0, 4)} />
-        })
-      }
+      <Grid container>
+        {
+          articles.slice(0, 5).map(article => {
+            return <ArticleCard article={article} key={Math.random()} />
+          })
+        }
+      </Grid>
     </React.Fragment>
   )
 }

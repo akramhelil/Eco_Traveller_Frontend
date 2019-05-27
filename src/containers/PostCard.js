@@ -9,8 +9,6 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import EditIcon from '@material-ui/icons/Edit'
 import { connect } from 'react-redux'
 import { adapter } from '../adapter';
-import Link from '@material-ui/core/Link'
-import { Link as RouterLink } from 'react-router-dom'
 import {Dialog, TextField, DialogTitle, DialogActions, Button, DialogContent,  } from '@material-ui/core';
 
 
@@ -78,12 +76,12 @@ class PostCard extends React.Component {
           <Card style={{ margin: 5 }}>
             <h3>{this.props.post.title.slice(0,25)}...</h3>
             <img src={this.props.post.img_url} alt='cards' height='300' width='300' />
-            <CardContent>
+            {/* <CardContent> */}
                 <p>{this.props.post.content.slice(0, 25)}...</p>
               <IconButton onClick={()=>this.handleSad(this.props.post.id)}>
                 <SentimentDissatisfiedIcon />
               </IconButton>
-                <div style={{ padding: 5, fontSize: 18, display: 'inline', fontDecoration: 'bold' }}>{this.props.post.likes}</div>
+                <div style={{ padding: 3, fontSize: 18, display: 'inline', fontDecoration: 'bold' }}>{this.props.post.likes}</div>
                 {this.props.login && this.props.post.trip.traveller_id === this.props.currentTraveller.id ?
                   <>
                 <IconButton onClick={() => this.handleDelete(this.props.post.id)}>
@@ -100,7 +98,7 @@ class PostCard extends React.Component {
                   <div className='signup'>
                     <DialogTitle >Edit Your Post</DialogTitle>
                        <DialogContent>
-                    <img src={this.state.img_url} alt="post" width='80%' style={{margin: 20}}/>
+                    <img src={this.state.img_url} alt="post" width='80%' style={{margin: 10}}/>
                       <TextField
                         name="title" onChange={this.changeHandler}
                         label="Title" value={this.state.title} fullWidth />
@@ -118,9 +116,9 @@ class PostCard extends React.Component {
                    </DialogActions>
                 </div>
                </Dialog>
-
+               
                 <p> Trip: {this.props.post.trip.name}</p>
-            </CardContent>
+            {/* </CardContent> */}
           </Card>
             </div>
         </Grid>

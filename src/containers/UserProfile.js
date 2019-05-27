@@ -6,7 +6,7 @@ import { Link as RouterLink } from 'react-router-dom'
 import Link from '@material-ui/core/Link'
 import Typography from '@material-ui/core/Typography'
 
-const MyTrips = props => <RouterLink to='/trips' {...props} />
+// const MyTrips = props => <RouterLink to='/trips' {...props} />
 const MyPosts = props => <RouterLink to='/myposts' {...props} />
 const EditProfile = props => <RouterLink to='/editprofile' {...props} />
 
@@ -32,9 +32,9 @@ class UserProfile extends React.Component {
               <Link component={EditProfile}>
                 <button id='buttonprof' color='primary' > Edit Profile</button >
               </Link>
-              <Link component={MyTrips}>
+              {/* <Link component={MyTrips}>
                 <button id='buttonprof' color='primary' > My Trips</button >
-              </Link>
+              </Link> */}
               <Link component={MyPosts}>
                 <button id='buttonprof' color='primary' > My Posts</button >
               </Link>
@@ -51,10 +51,10 @@ class UserProfile extends React.Component {
   }
 }
 
-function mapStateToProps (state) {
-  return {
-    currentTraveller: state.currentTraveller
-  }
-}
+// function mapStateToProps (state) {
+//   return {
+//     currentTraveller: state.currentTraveller
+//   }
+// }
 
 export default UserProfile
