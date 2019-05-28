@@ -1,4 +1,4 @@
-export const articles = [
+export const ArticlesArr = [
 
   {
     'source': {

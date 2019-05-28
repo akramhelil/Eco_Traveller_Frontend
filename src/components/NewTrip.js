@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
-import Grid from '@material-ui/core/Grid'
-import TextField from '@material-ui/core/TextField'
+import{ TextField, Typography, Grid, Paper }from '@material-ui/core'
 import { DateFormatInput } from 'material-ui-next-pickers'
-import Paper from '@material-ui/core/Paper'
-// import { styles } from '../style/MateilizeStyle'
 import { adapter } from '../adapter';
 import { connect } from 'react-redux'
 import Spinner from 'react-spinner-material';
@@ -72,7 +69,7 @@ const loginStyle = {
                 <img src='./main_page_logo.png' alt='logo' width='30%' />
               </Grid>
               <Paper style={loginStyle}>
-                <h2>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </h2>
+                <Typography varitant='h6'>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </Typography>
                 <form onSubmit={this.handleSubmit}>
                   <TextField label='Trip Name:'
                     name='name' style={{ margin: 30 }}

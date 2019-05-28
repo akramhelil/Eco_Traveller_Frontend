@@ -12,6 +12,7 @@ import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid'
 import { connect } from 'react-redux'
+import QueueAnim from 'rc-queue-anim'
 
 const SignUpCom = props => <RouterLink to='/signup' {...props} />
 const LoginCom = props => <RouterLink to='/login' {...props} />
@@ -36,7 +37,7 @@ class NavBar extends Component {
     const { classes } = this.props
     return (
       <React.Fragment>
-        <Grid container>
+        <Grid container >
           <Grid item xs={12}>
             <div className={classes.root}>
               <AppBar  style={{ background: '#4CAF50' }}>

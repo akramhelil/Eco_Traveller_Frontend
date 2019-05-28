@@ -45,8 +45,7 @@ export const styles = {
   },
   paper: {
     margin: 20,
-    padding: 40,
-    backgroundColor: '#d0e6c6'
+    padding: 40
   },
   buttonSignUp: {
     marginLeft: 140,

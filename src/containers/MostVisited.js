@@ -1,10 +1,10 @@
 import React from 'react'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
-import { articles } from '../articleData'
+import { ArticlesArr } from '../articleData'
 import FrontPageArticle from './FrontPageArticle'
 
-const shuffledArticles = articles.sort(() => 0.5 - Math.random())
+const shuffledArticles = ArticlesArr.sort(() => 0.5 - Math.random())
 let selectedArticles = shuffledArticles.slice(0, 8)
 
 class MostVisited extends React.Component {
