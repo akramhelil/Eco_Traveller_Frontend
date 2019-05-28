@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import TripCard from './TripCard'
 import Grid from '@material-ui/core/Grid'
-
+import Spinner from 'react-spinner-material'
 class Trips extends Component {
   render () {
     // console.log(this.props)
@@ -20,7 +20,7 @@ class Trips extends Component {
                 })
               })}
             </div>
-            : <h1>Loading....</h1>
+            : <Spinner size={120} spinnerColor={'#333'} spinnerWidth={2} visible />
           }
         </Grid>
       </React.Fragment>
@@ -29,7 +29,8 @@ class Trips extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    currentTraveller: state.currentTraveller
+    currentTraveller: state.currentTraveller,
+    login: state.login
   }
 }
 export default connect(mapStateToProps)(Trips)

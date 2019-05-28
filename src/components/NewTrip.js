@@ -6,6 +6,7 @@ import Paper from '@material-ui/core/Paper'
 // import { styles } from '../style/MateilizeStyle'
 import { adapter } from '../adapter';
 import { connect } from 'react-redux'
+import Spinner from 'react-spinner-material';
 
 const loginStyle = {
   margin: 20,
@@ -56,6 +57,7 @@ const loginStyle = {
     this.props.dispatch({type: 'NEW_TRIP',payload: response.trip})
         // go back to the main page
      this.props.history.push(`/`)
+     window.location.reload(false); 
    }
 
   render () {
@@ -84,7 +86,7 @@ const loginStyle = {
               </Paper>
             </div>
           </Grid> :
-          <h1>Loading .....</h1>
+          <Spinner size={120} spinnerColor={"#333"} spinnerWidth={2} visible={true} />
         }
       </React.Fragment>
     )

@@ -9,7 +9,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import EditIcon from '@material-ui/icons/Edit'
 import { connect } from 'react-redux'
 import { adapter } from '../adapter';
-import {Dialog, TextField, DialogTitle, DialogActions, Button, DialogContent,  } from '@material-ui/core';
+import {Dialog, TextField, DialogTitle, DialogActions, Button, DialogContent, Typography } from '@material-ui/core';
 
 
 class PostCard extends React.Component {
@@ -74,7 +74,7 @@ class PostCard extends React.Component {
         <Grid item style={styles.postCard} xs>
             <div className="signup">
           <Card style={{ margin: 5 }}>
-            <h3>{this.props.post.title.slice(0,25)}...</h3>
+              <Typography variant='h6' style={{ margin: 5 }}>{this.props.post.title.slice(0,25)}...</Typography>
             <img src={this.props.post.img_url} alt='cards' height='300' width='300' />
             {/* <CardContent> */}
                 <p>{this.props.post.content.slice(0, 25)}...</p>
@@ -127,10 +127,8 @@ class PostCard extends React.Component {
   }
 }
 function mapStateToProps (state) {
-  // console.log(state.currentTraveller)
   return {
     currentTraveller: state.currentTraveller,
-    // currentTrip: state.currentTrip,
     login: state.login
   }
 }

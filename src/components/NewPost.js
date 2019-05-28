@@ -86,6 +86,7 @@ import MenuItem from '@material-ui/core/MenuItem';
      console.log(newPost)
      this.props.dispatch({type: 'ADD_POST', payload: newPost})
      this.props.history.push('/')
+     window.location.reload(false); 
    }
   
    render() {

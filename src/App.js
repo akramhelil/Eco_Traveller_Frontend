@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 
 import Signup from './components/Signup'
 import Login from './components/Login'
@@ -40,7 +40,7 @@ class App extends React.Component {
       <React.Fragment>
         <Grid container>
           <Grid item xs={12} style={{ marginTop: 80 }}>
-            <NavBar />
+            <NavBar {...this.props} />
             <Switch>
               <Route path='/editprofile' render={(props) => {
                 return <EditProfile {...this.props.currentTraveller} {...props}
@@ -72,4 +72,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(App)
+export default withRouter(connect(mapStateToProps)(App))

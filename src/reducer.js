@@ -52,7 +52,6 @@ function reducer (state = initialState, action) {
       }
     case 'ADD_POST':
       return {
-
         ...state,
         posts: [...state.posts, action.payload.post ]
       }

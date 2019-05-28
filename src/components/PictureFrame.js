@@ -7,7 +7,7 @@ export default class PictureFrame extends Component {
     return (
       <React.Fragment >
         <Paper>
-          <Carousel autoPlay showThumbs infiniteLoop >
+          <Carousel autoPlay showThumbs={false} infiniteLoop >
             <div >
               {/* image size has to be  920X450 */}
               <img alt='cats' src='https://s3-ap-northeast-1.amazonaws.com/peatix-files/event/596274/cover-hu7g6w2kH9S5D23X9tSgQDLYCHZoYoWb.jpeg' />

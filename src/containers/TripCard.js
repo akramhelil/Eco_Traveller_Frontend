@@ -6,9 +6,8 @@ import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisf
 import { adapter } from '../adapter';
 import DeleteIcon from '@material-ui/icons/Delete'
 import EditIcon from '@material-ui/icons/Edit'
-
-
-export default class TripCard extends Component {
+import { connect } from 'react-redux'
+ class TripCard extends Component {
 
     state = {
         open: false, 
@@ -19,19 +18,16 @@ export default class TripCard extends Component {
       }
 
     handleSad = (id) => {
-        if (this.props.login) {
           adapter.updateLikes(id, this.props.post.likes)
-          .then(res => this.props.dispatch({type: 'UPDATE_SAD', payload: res}))
-        }else {
-          alert('Please Login!')
-          console.log(this.props)
-        }
+            .then(res => this.props.dispatch({ type: 'UPDATE_SAD', payload: res }))
+            window.location.reload(false); 
       }
     
       handleDelete = (id) => {
         
           adapter.deletePost(id)
             .then(deletedPost => this.props.dispatch({ type: 'DELETE_POST', payload: deletedPost }))
+            window.location.reload(false); 
       }
 
       handleOpen = () => {
@@ -121,3 +117,6 @@ export default class TripCard extends Component {
     )
   }
 }
+
+
+export default connect()(TripCard)

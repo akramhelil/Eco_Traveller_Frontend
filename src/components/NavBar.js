@@ -26,7 +26,7 @@ class NavBar extends Component {
   logOutHandle = () => {
     localStorage.removeItem("token")
     this.props.dispatch({type: 'LOG_OUT', payload: false})
-    // this.props.history.push(`/`)
+    this.props.history.push(`/`)
     window.location.reload(false); 
   }
 

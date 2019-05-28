@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <React.Fragment>
         <div className='signup'>
-          <footer>
+          <footer id='footer'>
             <Grid container
               direction='row'
               justify='center'
@@ -32,7 +32,6 @@ export default class Footer extends Component {
                 </Link>
               </Grid>
               <Grid item xs={5} />
-              <br />
               <Grid item xs={3} >
                 Copyright &copy;  eco-traveller.com
               </Grid>

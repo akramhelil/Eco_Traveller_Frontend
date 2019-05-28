@@ -5,7 +5,7 @@ import UserProfile from '../containers/UserProfile'
 import { adapter } from '../adapter'
 import { Paper, Grid } from '@material-ui/core'
 import { styles } from '../style/MateilizeStyle'
-// import SideBar from './SideBar'
+import Spinner from 'react-spinner-material'
 
 class PostFeed extends Component {
   componentDidMount () {
@@ -33,7 +33,7 @@ class PostFeed extends Component {
             </Grid>
           </div>
           <Grid item xs={7} style={{ marginLeft: 600 }}>
-            {this.props.posts.length < 1 && this.props.currentTraveller ? <h1>Loading ...</h1>
+            {this.props.posts.length < 1 && this.props.currentTraveller ? <Spinner size={120} spinnerColor={'#333'} spinnerWidth={2} visible />
               : this.props.posts.map(post => <BigPostCard post={post} key={post.id} />)}
           </Grid>
         </Grid>
