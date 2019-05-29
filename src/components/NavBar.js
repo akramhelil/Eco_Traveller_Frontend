@@ -12,7 +12,7 @@ import Link from '@material-ui/core/Link'
 import { Link as RouterLink } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid'
 import { connect } from 'react-redux'
-import QueueAnim from 'rc-queue-anim'
+// import QueueAnim from 'rc-queue-anim'
 
 const SignUpCom = props => <RouterLink to='/signup' {...props} />
 const LoginCom = props => <RouterLink to='/login' {...props} />
@@ -52,10 +52,10 @@ class NavBar extends Component {
                   Home
                     </Link>
                     <Link component={AllPosts} color='inherit' style={styles.navBarLinks}>
-                  Posts
+                  Explore
                     </Link>
                     <Link component={Articles} color='inherit' style={styles.navBarLinks}>
-                  Articles
+                  News
                     </Link>
                     <Link component={About} color='inherit' style={styles.navBarLinks}>
                   About

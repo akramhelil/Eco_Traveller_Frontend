@@ -22,18 +22,30 @@ class EditProfile extends Component {
     }
 
     componentDidMount() {
-        // console.log(this.props)
-        this.setState({
-            first_name: this.props.first_name,
-            last_name: this.props.last_name,
-            username: this.props.username,
-            profile_photo: this.props.profile_photo,
-            email: this.props.email,
-            about: this.props.about,
-        })
-        
+      if (localStorage.getItem('token')) {
+        let token = localStorage.getItem('token')
+        adapter.autoLogin(token)
+          .then(traveller => this.props.dispatch({ type: 'AUTO_LOGIN', payload: traveller }))
+      }
+      this.setState({
+        first_name: this.props.first_name,
+        last_name: this.props.last_name,
+        username: this.props.username,
+        profile_photo: this.props.profile_photo,
+        email: this.props.email,
+        about: this.props.about,
+    })
     }
-    // compnentDidUpdate
+  // compnentDidUpdate(prevProps) {
+  //   this.setState({
+  //       first_name: prevProps.first_name,
+  //       last_name: prevProps.last_name,
+  //       username: prevProps.username,
+  //       profile_photo: prevProps.profile_photo,
+  //       email: prevProps.email,
+  //       about: prevProps.about,
+  //   })
+  // }
 
       handleSubmit = (e, id) => {
           e.preventDefault()
@@ -84,10 +96,10 @@ class EditProfile extends Component {
       }
     
     render() {
-      console.log(this.props)
+      console.log(this.props.currentTraveller)
     return (
         <React.Fragment>
-            {this.props ?
+            {this.props.currentTraveller ?
                 <Grid container direction="column" alignItems="center" justify="space-evenly">
                     <Paper style={styles.paper}>
                         <form onSubmit={(e)=>this.handleSubmit(e, this.props.id)}>
@@ -122,8 +134,12 @@ class EditProfile extends Component {
     )
   }
 }
+function mapStateToProps (state) {
+  return {
+    currentTraveller: state.currentTraveller
+  }
+}
 
-
-export default connect()(EditProfile)
+export default connect(mapStateToProps)(EditProfile)
 
 

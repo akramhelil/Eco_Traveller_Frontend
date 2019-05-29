@@ -1157,6 +1157,266 @@ export const ArticlesArr = [
     'urlToImage': 'https://news.az/images_470/2019/05/22/183543.jpg',
     'publishedAt': '2019-05-22T13:04:10Z',
     'content': 'Global sea levels could rise by more than two metres by the end of this century if emissions continue in a business as usual scenario, a United Nations body has warned, The Independent reports. \r\nThe international team of researchers said this would have “cat… [+2587 chars]'
+  },
+  {
+    'source': {
+      'id': 'focus',
+      'name': 'Focus'
+    },
+    'author': 'FOCUS Online',
+    'title': 'Analyse unseres Partner-Portals "Economist" - Klimawandel begünstigt Konflikte und kann Nordpol-Krise zwischen Großmächten auslösen',
+    'description': 'Beide hängen zusammen – und das ist besorgniserregend. Umweltveränderungen werden in Zukunft stärker als bisher die Voraussetzungen für gewalttätige Konflikte begünstigen. Die Politik hat aber Instrumente, um den Folgen zu begegnen.',
+    'url': 'https://www.focus.de/politik/ausland/analyse-unseres-partner-portals-economist-klima-der-angst-der-zusammenhang-zwischen-kriegen-und-globaler-erwaermung_id_10772892.html',
+    'urlToImage': 'https://p5.focus.de/img/fotos/crop4885515/5822713731-w1200-h627-o-q75-p5/urn-newsml-dpa-com-20090101-150817-99-06488-large-4-3.jpg',
+    'publishedAt': '2019-05-29T14:17:56Z',
+    'content': 'Beide hängen zusammen und das ist besorgniserregend. Umweltveränderungen werden in Zukunft stärker als bisher die Voraussetzungen für gewalttätige Konflikte begünstigen. Die Politik hat aber Instrumente, um den Folgen zu begegnen.\r\nVerursachte der Klimawandel… [+8468 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Supplychainquarterly.com'
+    },
+    'author': null,
+    'title': "The top 10 supply chain risks of 2019 – Strategy – CSCMP's Supply Chain Quarterly",
+    'description': 'Yet modern supply chains are also vulnerable. Transportation delays, theft, natural disasters, inclement weather, cyberattacks, and unexpected quality issues can disrupt cargo flows, creating short-term costs and delivery challenges. And shifts in local, nati…',
+    'url': 'https://www.supplychainquarterly.com/topics/Strategy/20190514-the-top-10-supply-chain-risks-of-2019/#__prclt=Hgm3lfF4',
+    'urlToImage': null,
+    'publishedAt': '2019-05-29T13:34:00Z',
+    'content': "Modern supply chains are more complex and global than ever before. But that also leaves them open to a wider variety of risks and disruptions. Here are ten risks to track for the coming year.\r\nEditor's Note: Thisarticle is excerpted from The Resilience360 Ann… [+14797 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Yahoo.com'
+    },
+    'author': null,
+    'title': 'Merkel govt vows climate action as voters turn up heat',
+    'description': "Chancellor Angela Merkel's government Wednesday pledged a new climate strategy by September as it scrambles to tackle what has become Germany's hottest political issue. Merkel's coalition took heavy losses in Sunday's European Parliament elections at the hand…",
+    'url': 'https://news.yahoo.com/merkel-team-talks-climate-voters-turn-heat-031253264.html',
+    'urlToImage': 'https://s.yimg.com/uu/api/res/1.2/N_KqGdNTf9Nq.5vNOCzhVA--~B/aD00ODc7dz0xMDI0O3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en_us/News/afp.com/270ef3eecf1922a0f5185c2d6606771dc09019b3.jpg',
+    'publishedAt': '2019-05-29T13:33:54Z',
+    'content': "Berlin (AFP) - Chancellor Angela Merkel's government Wednesday pledged a new climate strategy by September as it scrambles to tackle what has become Germany's hottest political issue.\r\nMerkel's coalition took heavy losses in Sunday's European Parliament elect… [+4082 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Globalresearch.ca'
+    },
+    'author': 'John Treat',
+    'title': 'Growth in Renewable Energy Has Stalled. Investment Is Falling. But Why?',
+    'description': 'The International Energy Agency (IEA) recently announced that the growth of capacity additions to renewable power generation stalled in 2018, after nearly two decades of growth. Calling the new findings an “unexpected flattening of growth trends,” the IEA not…',
+    'url': 'https://www.globalresearch.ca/growth-renewables-stalled-investment-falling/5678889',
+    'urlToImage': 'https://www.globalresearch.ca/wp-content/uploads/2015/06/solar-panels-wikimedia.png',
+    'publishedAt': '2019-05-29T13:33:53Z',
+    'content': 'The International Energy Agency (IEA) recently announced that the growth of capacity additions to renewable power generation stalled in 2018, after nearly two decades of growth. Calling the new findings an unexpected flattening of growth trends, the IEA noted… [+10521 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Insider.com'
+    },
+    'author': 'Beatrice Christofaro',
+    'title': "German YouTubers are in a battle with the country's politicians after they were accused of spreading anti-government propaganda",
+    'description': "YouTubers in Germany are challenging the country's government over what they see as its failure to combat climate change. YouTube star Rezo posted a video urging voters to boycott the governing parties in the European elections. Chancellor Angela Merkel's par…",
+    'url': 'https://www.insider.com/german-youtubers-in-battle-with-politicians-over-climate-change-2019-5',
+    'urlToImage': 'https://amp.businessinsider.com/images/5cee85c74cf2706d964726f8-1920-960.jpg',
+    'publishedAt': '2019-05-29T13:13:31Z',
+    'content': "A leading politician in Germany has been accused of censorship after she argued for the regulation of political views on the internet. Annegret Kramp-Karrenbauer, popularly known as AKK, made the proposal in face of an escalating dispute with the country's Yo… [+2340 chars]"
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Businessinsider.com.au'
+    },
+    'author': 'Beatrice Christofaro',
+    'title': "German YouTubers are in a battle with Angela Merkel's party after they were accused of spreading anti-government propaganda",
+    'description': 'A leading politician in Germany has been accused of censorship after she argued for the regulation of political views on the internet. Annegret Kramp-Karrenbauer, popularly known as AKK, made the proposal in face of an escalating dispute with the country’s Yo…',
+    'url': 'https://www.businessinsider.com.au/german-youtubers-in-battle-with-politicians-over-climate-change-2019-5',
+    'urlToImage': 'https://static.insider.com/image/5cee68d0594ea52359243ec2.jpg',
+    'publishedAt': '2019-05-29T13:13:31Z',
+    'content': 'YouTubers in Germany are challenging the country’s government over what they see as its failure to combat climate change.\r\nYouTube star Rezo posted a video urging voters to boycott the governing parties in the European elections.\r\nChancellor Angela Merkel’s p… [+2807 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Truthdig.com'
+    },
+    'author': 'Tim Radford / Climate News Network',
+    'title': 'It’s Now Impossible to Deny Who Caused Climate Change',
+    'description': 'British scientists have re-asserted an essential reality about global warming: human activity, not slow-acting and so far unidentified natural cycles in t',
+    'url': 'https://www.truthdig.com/articles/its-now-impossible-to-deny-who-caused-climate-change/',
+    'urlToImage': 'https://www.truthdig.com/wp-content/uploads/2019/03/8ClimateStrike_Nigro_0215196412_DSC6412-1.jpg',
+    'publishedAt': '2019-05-29T12:58:18Z',
+    'content': 'British scientists have re-asserted an essential reality about global warming: human activity, not slow-acting and so far unidentified natural cycles in the worlds oceans, is its cause.\r\nThat activity including ever-increasing combustion of fossil fuels as we… [+2368 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Phys.org'
+    },
+    'author': 'Science X staff',
+    'title': 'Red Sea may be cooling rather than warming, study finds',
+    'description': 'A recent study by Earth Scientists and Oceanographers at King Abdullah University of Science and Technology (KAUST) has revealed that surface temperatures in the Red Sea might be cooling, rather than rising.',
+    'url': 'https://phys.org/news/2019-05-red-sea-cooling.html',
+    'urlToImage': 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/5cee65137654c.jpg',
+    'publishedAt': '2019-05-29T12:55:10Z',
+    'content': 'A recent study by Earth Scientists and Oceanographers at King Abdullah University of Science and Technology (KAUST) has revealed that surface temperatures in the Red Sea might be cooling, rather than rising.\r\n"Analysis of long term data sets shows that the cu… [+3211 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Insurancejournal.com'
+    },
+    'author': 'Piotr Skolimowski',
+    'title': 'European Central Bank Calls for ‘Deeper Understanding’ of Climate Risks for Financial System',
+    'description': 'Climate change could hit bank balance sheets with a knock-on effect on financial stability, the European Central Bank warned on Wednesday. In a special feature for its semi-annual Financial Stability Review on Wednesday, the ECB said problems will materialize…',
+    'url': 'https://www.insurancejournal.com/news/international/2019/05/29/527699.htm',
+    'urlToImage': 'https://www.insurancejournal.com/app/uploads/2018/05/california-commissioner-ran-a-climate-change-stress-test-580x522.jpg',
+    'publishedAt': '2019-05-29T12:33:37Z',
+    'content': 'Climate change could hit bank balance sheets with a knock-on effect on financial stability, the European Central Bank warned on Wednesday.\r\nIn a special feature for its semi-annual Financial Stability Review on Wednesday, the ECB said problems will materializ… [+1546 chars]'
+  },
+  {
+    'source': {
+      'id': 'the-washington-post',
+      'name': 'The Washington Post'
+    },
+    'author': 'Dino Grandoni',
+    'title': 'The Energy 202: Democrats ramp up calls for live primary debate on climate change',
+    'description': 'At least 11 candidates have endorsed the idea, to varying degrees.',
+    'url': 'https://www.washingtonpost.com/news/powerpost/paloma/the-energy-202/2019/05/29/the-energy-202-democrats-ramp-up-calls-for-live-primary-debate-on-climate-change/5ced68171ad2e52231e8e827/',
+    'urlToImage': 'https://www.washingtonpost.com/pbox.php?url=https://palomaimages.washingtonpost.com/pr2/297953cbd8336753a6457bbe408e9fa0-5536-3736-70-8-6BCOMHS3JAI6TGGUQRAIRUJV6I.jpg&w=1484&op=resize&opt=1&filter=antialias&t=20170517',
+    'publishedAt': '2019-05-29T12:10:03Z',
+    'content': 'THE LIGHTBULB\r\nSen. Bernie Sanders (I-Vt.). (AP Photo/John Locher)\r\nDemocrats are talking a lot more about climate change compared to past presidential campaigns. \r\nAnd increasingly, they have a new demand: They want the chance to do it in front of a national… [+7952 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Dailyinfographic.com'
+    },
+    'author': 'Ivo',
+    'title': 'The Shocking Impact Of A 2ºC Global Warming',
+    'description': 'For people that live in colder climates, a slight increase in temperatures may be welcomed. Most will prefer going to the beach instead of shoveling their driveway. Unfortunately, even a small increase in temperatures can be very damaging to life on Earth. Wh…',
+    'url': 'https://www.dailyinfographic.com/shocking-impact-of-2degree-global-warming',
+    'urlToImage': 'https://www.dailyinfographic.com/wp-content/uploads/2019/03/Climate-Risks-1.5ºC-vs-2ºC-Global-Warming.jpg',
+    'publishedAt': '2019-05-29T12:00:27Z',
+    'content': 'By Ivo|source:HereMay 29th, 2019For people that live in colder climates, a slight increase in temperatures may be welcomed.  Most will prefer going to the beach instead of shoveling their driveway. Unfortunately, even a small increase in temperatures can be v… [+981 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Prnewswire.com'
+    },
+    'author': null,
+    'title': 'Cultivate a Healthy Body, Peaceful Mind, and Vibrant Spirit with Four Seasons this Global Wellness Day',
+    'description': "Explore a world of wellness opportunities with Four Seasons TORONTO, May 29, 2019 /PRNewswire/ -- On June 8, Four Seasons Hotels and Resorts, the world's leading luxury hospitality company, will celebrate Global Wellness Day for the fourth consecutive year wi…",
+    'url': 'https://www.prnewswire.com/news-releases/cultivate-a-healthy-body-peaceful-mind-and-vibrant-spirit-with-four-seasons-this-global-wellness-day-300857922.html',
+    'urlToImage': 'https://mma.prnewswire.com/media/893969/AntiGravity_Yoga.jpg?p=facebook',
+    'publishedAt': '2019-05-29T12:00:00Z',
+    'content': 'Four Seasons is known the world over for creating memorable experiences that encourage guests to unwind and connect more deeply with their destination, their loved ones and with themselves; a focus that has inspired properties around the globe to create local… [+8095 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Www.nu.nl'
+    },
+    'author': 'NU.nl/Shannon Bakker',
+    'title': 'NUcheckt: Bewering dat VN klimaatverandering door mens ontkent is onjuist',
+    'description': 'NU.nl checkt dagelijks berichten op betrouwbaarheid. Bewering: "Het klimaatpanel van de VN erkent dat de opwarming van de aarde niet door de mens is veroorzaakt."',
+    'url': 'https://www.nu.nl/nucheckt/5912577/nucheckt-bewering-dat-vn-klimaatverandering-door-mens-ontkent-is-onjuist.html',
+    'urlToImage': 'https://media.nu.nl/m/m1oxd98aa792_wd1280.jpg/nucheckt-bewering-dat-vn-klimaatverandering-door-mens-ontkent-is-onjuist.jpg',
+    'publishedAt': '2019-05-29T11:49:02Z',
+    'content': 'NU.nl checkt dagelijks berichten op betrouwbaarheid. Bewering: "Het klimaatpanel van de VN erkent dat de opwarming van de aarde niet door de mens is veroorzaakt."\r\nOordeel: onwaar\r\nWebsites als NineforNews, Xandernieuws, Climategate en Doorbraak.be deelden in… [+2684 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Www.nu.nl'
+    },
+    'author': 'NU.nl/Shannon Bakker',
+    'title': 'NUcheckt: Bewering dat VN klimaatverandering door mens ontkent is onjuist',
+    'description': 'NU.nl checkt dagelijks berichten op betrouwbaarheid. Bewering: "Het klimaatpanel van de VN erkent dat de opwarming van de aarde niet door de mens is veroorzaakt."',
+    'url': 'https://www.nu.nl/nucheckt/5912577/nucheckt-bewering-dat-vn-klimaatverandering-door-mens-ontkent-is-onjuist.html?redirect=1',
+    'urlToImage': 'https://media.nu.nl/m/m1oxd98aa792_wd1280.jpg/nucheckt-bewering-dat-vn-klimaatverandering-door-mens-ontkent-is-onjuist.jpg',
+    'publishedAt': '2019-05-29T11:19:07Z',
+    'content': 'NU.nl checkt dagelijks berichten op betrouwbaarheid. Bewering: "Het klimaatpanel van de VN erkent dat de opwarming van de aarde niet door de mens is veroorzaakt."\r\nOordeel: onwaar\r\nWebsites als NineforNews, Xandernieuws, Climategate en Doorbraak.be deelden in… [+2684 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Luxurylaunches.com'
+    },
+    'author': 'SCMP',
+    'title': 'Sustainability was the buzzword – 4 key takeaways from Copenhagen Fashion Summit',
+    'description': '‘Time for action is now,’ the annual discussion forum tells leading figures, such as Kering CEO Francois-Henri Pinault... The post Sustainability was the buzzword – 4 key takeaways from Copenhagen Fashion Summit appeared first on Luxurylaunches.',
+    'url': 'http://luxurylaunches.com/fashion/sustainability-was-the-buzzword-4-key-takeaways-from-copenhagen-fashion-summit.php',
+    'urlToImage': 'http://luxurylaunches.com/wp-content/uploads/2019/05/Copenhagen-Fashion-Summit.jpg',
+    'publishedAt': '2019-05-29T11:17:29Z',
+    'content': 'Time for action is now, the annual discussion forum tells leading figures, such as Kering CEO Francois-Henri Pinault and designer Katharine Hamnett\r\nOver 450 brands and organisations from 48 countries gathered in the Danish capital, Copenhagen, to discuss the… [+13351 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Phys.org'
+    },
+    'author': 'Science X staff',
+    'title': 'A warming Arctic produces weather extremes in our latitudes',
+    'description': 'Atmospheric researchers at the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) have developed a climate model that can accurately depict the frequently observed winding course of the jet stream, a major air current over the Nort…',
+    'url': 'https://phys.org/news/2019-05-arctic-weather-extremes-latitudes.html',
+    'urlToImage': 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/1-climate.jpg',
+    'publishedAt': '2019-05-29T11:11:29Z',
+    'content': 'Atmospheric researchers at the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) have developed a climate model that can accurately depict the frequently observed winding course of the jet stream, a major air current over the Nort… [+5543 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Scienceblog.com'
+    },
+    'author': 'ScienceBlog.com',
+    'title': 'A warming Arctic produces weather extremes in our latitudes',
+    'description': 'Atmospheric researchers at the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) have now developed a climate model that can accurately depict the frequently observed winding course of the jet stream, a major air current over the …',
+    'url': 'https://scienceblog.com/508059/a-warming-arctic-produces-weather-extremes-in-our-latitudes/',
+    'urlToImage': 'https://i0.wp.com/scienceblog.com/wp-content/uploads/2019/05/20140324_MeereisNadirPhoto_100106_IceCam_SHendricks.jpg?fit=2400%2C1600&ssl=1',
+    'publishedAt': '2019-05-29T11:07:02Z',
+    'content': 'Atmospheric researchers at the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) have now developed a climate model that can accurately depict the frequently observed winding course of the jet stream, a major air current over the … [+6512 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Euronews.com'
+    },
+    'author': null,
+    'title': 'From globalisation to the blogosphere: The Eurasian Media Forum encourages open-minded debates',
+    'description': "World politics, global overconsumption, the arrival of artificial intelligence, and a peek into the blogosphere - the 2019 Eurasian Media Forum Kazakhstan doesn't shy away from asking big questions.",
+    'url': 'https://www.euronews.com/2019/05/29/from-globalisation-to-the-blogosphere-the-eurasian-media-forum-encourages-open-minded-deba',
+    'urlToImage': 'https://static.euronews.com/articles/stories/03/91/90/42/1000x563_cmsv2_d99472fc-b275-54f4-a345-4a09c40a9cb1-3919042.jpg',
+    'publishedAt': '2019-05-29T11:00:51Z',
+    'content': 'World politics, global overconsumption, the arrival of artificial intelligence, and a peek into the blogosphere - the 2019 Eurasian Media Forum Kazakhstan doesnt shy away from asking big questions. Taking place across three days this May in Almaty, the Forum … [+4512 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Resilience.org'
+    },
+    'author': 'Joel Stronberg',
+    'title': 'Climate Politics/Capitol Light Newsletter Issue 3',
+    'description': 'Democratic contender Julián Castro said Thursday he has signed onto the “No Fossil Fuel Money” pledge, swearing off money from oil executives, lobbyists or PACs. The Sunrise Movement and other progressive climate advocate organizations consider the pledge a r…',
+    'url': 'https://www.resilience.org/stories/2019-05-29/climate-politics-capitol-light-newsletter-issue-3/',
+    'urlToImage': 'https://www.resilience.org/wp-content/uploads/2019/05/2058930811.jpg',
+    'publishedAt': '2019-05-29T10:59:13Z',
+    'content': 'Volume 1  May 28, 2019  Issue 3\r\nBoth the House and Senate are out on scheduled district workdays and will not return until June 4, 2019.\r\nWholl sweep the forest floors now? The Trump administration announced on May 24th it will be killing a Forest Service pr… [+14454 chars]'
+  },
+  {
+    'source': {
+      'id': null,
+      'name': 'Euractiv.com'
+    },
+    'author': 'Georgi Gotev',
+    'title': 'Kazakhstan calls EU’s new Central Asia strategy ‘visionary’',
+    'description': "Kazakhstan welcomes the EU's new vision for a stronger partnership with Central Asia, particularly as it took into account the country's proposals, its deputy foreign minister told EURACTIV and called the document, due to be adopted next month, \"visionary\".",
+    'url': 'http://www.euractiv.com/section/central-asia/interview/kazakhstan-calls-eus-new-central-asia-strategy-visionary/',
+    'urlToImage': 'https://www.euractiv.com/wp-content/uploads/sites/2/2019/05/Roman-Vassilenko-800x450.jpg',
+    'publishedAt': '2019-05-29T10:50:22Z',
+    'content': 'Kazakhstan welcomes the EU’s new vision for a stronger partnership with Central Asia, particularly as it took into account the country’s proposals, its deputy foreign minister told EURACTIV and called the document, due to be adopted next month, “visionary”.\r\n… [+9244 chars]'
   }
 
 ]

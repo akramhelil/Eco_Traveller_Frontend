@@ -23,7 +23,7 @@ export default class Articles extends React.Component {
     }else if (this.displayArticles(this.state.startIndex).length  =  ArticlesArr.length) {
       this.setState({
         hasMore: false
-      });
+      })
     }
   }
 
@@ -34,10 +34,10 @@ export default class Articles extends React.Component {
   
   render() {
 
-    console.log(this.state.startIndex)
-    console.log(ArticlesArr.length)
-    console.log(this.state.hasMore)
-    console.log(this.displayArticles(this.state.startIndex).length)
+    // console.log(this.state.startIndex)
+    // console.log(ArticlesArr.length)
+    // console.log(this.state.hasMore)
+    // console.log(this.displayArticles(this.state.startIndex).length)
     return (
       <React.Fragment>
         <Grid container>

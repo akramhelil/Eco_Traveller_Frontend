@@ -69,7 +69,7 @@ const loginStyle = {
                 <img src='./main_page_logo.png' alt='logo' width='30%' />
               </Grid>
               <Paper style={loginStyle}>
-                <Typography varitant='h6'>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </Typography>
+                <Typography variant='h5'>Hello! {this.props.currentTraveller.first_name} Let's Setup Your Trip </Typography>
                 <form onSubmit={this.handleSubmit}>
                   <TextField label='Trip Name:'
                     name='name' style={{ margin: 30 }}

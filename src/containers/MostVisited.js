@@ -15,7 +15,7 @@ class MostVisited extends React.Component {
           <Grid item xs={12}>
             <div className='signup'>
               <Typography component='h5' variant='h5' style={{ padding: 20 }}>
-              Recomended Articles
+              Recomended News
               </Typography>
             </div>
           </Grid>

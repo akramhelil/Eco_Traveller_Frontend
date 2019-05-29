@@ -1,6 +1,6 @@
 import React from 'react'
 import { styles } from '../style/MateilizeStyle'
-import { Grid, Typography, Paper, CardMedia, Card } from '@material-ui/core'
+import { Grid, Typography, CardMedia, Card } from '@material-ui/core'
 
 class ArticleCard extends React.Component {
   render () {

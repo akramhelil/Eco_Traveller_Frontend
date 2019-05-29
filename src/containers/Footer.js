@@ -11,7 +11,7 @@ export default class Footer extends Component {
               direction='row'
               justify='center'
               alignItems='flex-end' >
-              <Grid item xs={1}>
+              {/* <Grid item xs={1}>
                 <Link to='/'>
                Home
                 </Link>
@@ -30,8 +30,7 @@ export default class Footer extends Component {
                 <Link to='/about'>
                About
                 </Link>
-              </Grid>
-              <Grid item xs={5} />
+              </Grid> */}
               <Grid item xs={3} >
                 Copyright &copy;  eco-traveller.com
               </Grid>
