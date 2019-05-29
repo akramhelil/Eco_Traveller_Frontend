@@ -7,20 +7,78 @@ export default class PictureFrame extends Component {
     return (
       <React.Fragment >
         <Paper>
-          <Carousel autoPlay showThumbs={false} infiniteLoop axis='vertical'
+          <Carousel autoPlay showThumbs={false} infiniteLoop
             verticalSwipe='natural' >
             <div >
-              {/* image size has to be  920X450 */}
-              <img alt='cats' src='https://s3-ap-northeast-1.amazonaws.com/peatix-files/event/596274/cover-hu7g6w2kH9S5D23X9tSgQDLYCHZoYoWb.jpeg' />
-              <p className='legend'>Legend 1</p>
+              <img alt='Amur_Leopard' src='./Amur_Leopard.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Amur_leopard'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Amur Leopard</a>
             </div>
-            <div>
-              <img alt='cats' src='http://www.cityofimages.net/wp-content/uploads/2014/05/CI-Powerful_Owl_CloseUp_EHSS_IMG_9590-920x450.jpg' />
-              <p className='legend'>Legend 2</p>
+            <div >
+              <img alt='Vaquita' src='./Vaquita.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Vaquita'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Vaquita </a>
             </div>
-            <div>
-              <img alt='cats' src='http://www.vuyanilodge.com/safariblog/wp-content/uploads/img_3626-920x450.jpg' />
-              <p className='legend'>Legend 2</p>
+            <div >
+              <img alt='Sea-Turtle' src='./sea-turtle.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Sea_turtle'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Sea Turtle </a>
+            </div>
+            <div >
+              <img alt='Tiger' src='./tiger.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Tiger'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Tiger </a>
+            </div>
+            <div >
+              <img alt='Rhino' src='./rhino.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Rhinoceros'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Rhinoceros </a>
+            </div>
+            <div >
+              <img alt='Orangutans' src='./Orangutans.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Orangutans'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Orangutans </a>
+            </div>
+
+            <div >
+              <img alt='Gorilla' src='./gorilla.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Gorilla'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Gorilla </a>
+            </div>
+            <div >
+              <img alt='Elepgant' src='./elephant.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Sumatran_elephant'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Sumatran Elephant </a>
+            </div>
+            <div >
+              <img alt='saolahighres' src='./saolahighres.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Saola'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Saola</a>
+            </div>
+            <div >
+              <img alt='Pangolins' src='./pangolins.jpg' />
+              <a className='legend' id='animals'
+                href='https://en.wikipedia.org/wiki/Pangolins'
+                target='_blank' rel='noopener noreferrer'
+                style={{ fontSize: 40, textDecoration: 'none' }}>Pangolins</a>
             </div>
           </Carousel>
         </Paper>
