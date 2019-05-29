@@ -32,7 +32,7 @@ export default class Footer extends Component {
                 </Link>
               </Grid> */}
               <Grid item xs={3} >
-                Copyright &copy;  eco-traveller.com
+                Copyright &copy;  🌎  Eco-Traveller.com
               </Grid>
             </Grid>
           </footer>
