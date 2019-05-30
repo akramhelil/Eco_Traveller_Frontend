@@ -48,7 +48,7 @@ export const styles = {
     padding: 40
   },
   buttonSignUp: {
-    marginLeft: 140,
+    marginLeft: 110,
     paddingTop: 20
   },
   sideBar: {

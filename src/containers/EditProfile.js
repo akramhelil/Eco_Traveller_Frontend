@@ -62,6 +62,11 @@ class EditProfile extends Component {
 
     
       }
+  
+      gobackHandler = (e) => {
+        e.preventDefault()
+        this.props.history.goBack()
+      }
     
       changeHandler = (e) => {
         this.setState({
@@ -125,8 +130,10 @@ class EditProfile extends Component {
                                 <textarea name="about" onChange={this.changeHandler} rows="4" cols="40" style={styles.input}  value={this.state.about}></textarea>
                             </Grid>
                             <Grid item style={styles.buttonSignUp} >
+                                <button className="button" onClick={this.gobackHandler}>Go Back</button>
                                 <input className="button" type='submit' value="Update" />
                             </Grid>
+                       
                         </form>
                     </Paper>
                 </Grid> : <h1>Loading ...</h1>}
