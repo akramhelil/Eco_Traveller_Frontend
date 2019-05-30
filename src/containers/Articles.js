@@ -26,16 +26,10 @@ export default class Articles extends React.Component {
   }
 
   displayArticles = (startIndex) => {
-    // console.log(this.state.startIndex)
     return ArticlesArr.slice(0, startIndex + 5)
   }
   
   render() {
-
-    // console.log(this.state.startIndex)
-    // console.log(ArticlesArr.length)
-    // console.log(this.state.hasMore)
-    // console.log(this.displayArticles(this.state.startIndex).length)
     return (
       <React.Fragment>
         <Grid container>

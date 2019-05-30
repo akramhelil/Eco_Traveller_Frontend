@@ -96,7 +96,6 @@ class EditProfile extends Component {
          console.log(response)
          this.props.dispatch({type: 'UPDATE_PROFILE',payload: response.traveller})
          localStorage.setItem("token", response.token)
-             // go back to the main page
           this.props.history.push(`/`)
       }
     

@@ -50,7 +50,9 @@ class PostFeed extends Component {
         <Grid container >
           <div className='signup'>
             <Grid item sm={5} style={styles.postfeedleft} >
+              <a href="/">
               <img src='./main_page_logo.png' alt='logo' width='50%' />
+              </a>
               {this.props.currentTraveller
                 ? <Paper>
                   <UserProfile currentTraveller={this.props.currentTraveller} />

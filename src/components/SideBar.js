@@ -17,7 +17,9 @@ export default class SideBar extends Component {
           alignItems='center' >
           <div className='signup'>
             <Grid item sm={12} >
+              <a href="/">
               <img src='./main_page_logo.png' alt='logo' width='60%' />
+              </a>
             </Grid>
           </div>
           <Grid item sm={12} >
