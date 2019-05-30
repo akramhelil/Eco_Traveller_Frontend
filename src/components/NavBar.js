@@ -62,24 +62,26 @@ class NavBar extends Component {
                     </Link>
                   </Typography>
                   {this.props.currentTraveller && !this.props.currentTrip
-                    ? <Link component={NewTipCom} color='inherit' style={styles.navBarLinks}>
-                      <Button color='inherit'> New Trip</Button>
+                    ? <Link component={NewTipCom} color='inherit' style={styles.navBarBtn}>
+                      <Button color='inherit' style={styles.navBarBtn}> New Trip</Button>
                     </Link> : null}
                   {this.props.currentTraveller
-                    ? <Link component={NewPostCom} color='inherit' style={styles.navBarLinks}>
-                      <Button color='inherit'> New Post</Button>
+                    ? <Link component={NewPostCom} color='inherit' style={styles.navBarBtn}>
+                      <Button color='inherit' style={styles.navBarBtn}> New Post</Button>
                     </Link>
                     : null}
                   {this.props.currentTraveller ? null : <Link component={LoginCom} color='inherit' style={styles.navBarLinks}>
-                    <Button color='inherit'>Log In</Button>
+                    <Button color='inherit' style={styles.navBarBtn}>Log In</Button>
                   </Link> }
 
                   {this.props.currentTraveller ? null
                     : <Link component={SignUpCom} color='inherit' style={styles.navBarLinks}>
-                      <Button color='inherit'> Sign Up</Button>
+                      <Button color='inherit' style=
+                    {styles.navBarBtn}> Sign Up</Button>
                     </Link>}
                   {this.props.currentTraveller ?
-                    <Button color='inherit' onClick={this.logOutHandle}> Log Out</Button> : null}
+                    <Button color='inherit' onClick={this.logOutHandle} style=
+                    {styles.navBarBtn}> Log Out</Button> : null}
                 </Toolbar>
               </AppBar>
             </div>

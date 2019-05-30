@@ -31,7 +31,13 @@ export const styles = {
   },
   navBarLinks: {
     textDecoration: 'none',
-    margin: 10
+    margin: 10,
+    fontSize: 25
+  },
+  navBarBtn: {
+    textDecoration: 'none',
+    margin: 10,
+    fontSize: 20
   },
   newAvatarStyle: {
     marginLeft: 70,

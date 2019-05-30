@@ -46,7 +46,6 @@ import { connect } from 'react-redux'
        uploadPreset: process.env.REACT_APP_UPLOAD_PRESET_KEY
      },
      (error, result) => {
-
        if (result && result.event === "success") {
          this.setState({
           profile_photo: `https://res.cloudinary.com/ecotraveller/image/upload/${result.info.path}`, uploaded: true
@@ -62,13 +61,12 @@ import { connect } from 'react-redux'
      } else {
        this.props.dispatch({type: 'SIGN_UP',payload: response.traveller})
        localStorage.setItem("token", response.token)
-           // go back to the main page
+           //push to main page
         this.props.history.push(`/`)
     }
      }
 
   render() {
-    // console.log('Popps SignUp', this.props.currentTraveller)
     return (
       <React.Fragment>
        <Grid container direction="column"  alignItems="center" justify="space-evenly">

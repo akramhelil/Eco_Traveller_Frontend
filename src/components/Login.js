@@ -49,7 +49,7 @@ import { connect } from 'react-redux'
     return (
       <React.Fragment>
         <Grid container direction="column" alignItems="center" >
-        <Grid item style={{padding:120}}>
+        <Grid item style={{padding:40}}>
           <Paper style={styles.paper}>
             <div className="signup">
               <img src="../main_page_logo.png" alt="login" width='300' />

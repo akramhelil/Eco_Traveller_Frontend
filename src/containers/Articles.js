@@ -18,7 +18,7 @@ export default class Articles extends React.Component {
           startIndex: this.state.startIndex + 5
         })
       }, 1500)
-    }else if (this.displayArticles(this.state.startIndex).length  =  ArticlesArr.length) {
+    }else if (this.displayArticles(this.state.startIndex).length  ===  ArticlesArr.length) {
       this.setState({
         hasMore: false
       })

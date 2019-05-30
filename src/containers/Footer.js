@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Grid from '@material-ui/core/Grid'
 export default class Footer extends Component {
   render () {
@@ -12,7 +11,11 @@ export default class Footer extends Component {
               justify='center'
               alignItems='flex-end' >
               <Grid item xs={3} >
-                Copyright &copy;  🌎  Eco-Traveller.com
+                Copyright &copy;
+                <span style={{ margin: 5 }} role='img' aria-label='earth'>
+                🌎
+                </span>
+                 Eco-Traveller.com
               </Grid>
             </Grid>
           </footer>

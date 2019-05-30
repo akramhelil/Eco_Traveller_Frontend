@@ -23,7 +23,7 @@ class PostFeed extends Component {
           startIndex: this.state.startIndex + 3
         })
       }, 1500)
-    }else if (this.displayPosts(this.state.startIndex).length  =  this.props.posts.length) {
+    }else if (this.displayPosts(this.state.startIndex).length  ===  this.props.posts.length) {
       this.setState({
         hasMore: false
       });
