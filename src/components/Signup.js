@@ -33,6 +33,11 @@ import { connect } from 'react-redux'
     })
   }
    
+  gobackHandler = (e) => {
+    e.preventDefault()
+    this.props.history.goBack()
+  }
+   
    openWidget = (e) => {
     e.preventDefault()
     window.cloudinary.createUploadWidget(
@@ -96,7 +101,8 @@ import { connect } from 'react-redux'
                   <textarea name="about" onChange={this.changeHandler} rows="4" cols="40" placeholder='Tell us about yourself...' style={styles.input}></textarea>
                 </Grid>
                   
-                <Grid item style={styles.buttonSignUp} >
+              <Grid item style={styles.buttonSignUp} >
+                <button className="button" onClick={this.gobackHandler}>Cancel</button>
                   <input className="button" type='submit' value="Submit"   />
                 </Grid>
               </form>

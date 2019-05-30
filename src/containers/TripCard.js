@@ -56,6 +56,7 @@ import { connect } from 'react-redux'
         this.setState({
           open: false
         })
+        window.location.reload(false); 
       }
     
     

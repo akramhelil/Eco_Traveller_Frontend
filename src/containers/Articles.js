@@ -1,11 +1,9 @@
 import React from 'react'
 import { ArticlesArr } from '../articleData'
 import ArticleCard from '../components/ArticleCard'
-import { Grid } from '@material-ui/core'
+import { Grid, Typography } from '@material-ui/core'
 import InfiniteScroll from 'react-infinite-scroll-component'
-// import Spinner from 'react-spinner-material'
 import Loader from 'react-loader-spinner'
-
 export default class Articles extends React.Component {
 
   state = {
@@ -55,7 +53,7 @@ export default class Articles extends React.Component {
               </div>}
             endMessage={
               <p style={{ textAlign: 'center' }}>
-                <b>Yay! You have seen it all</b>
+                <Typography variant='h5'>Yay! You have seen it all</Typography>
               </p>
             } >
         

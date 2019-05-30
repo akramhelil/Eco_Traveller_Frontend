@@ -69,19 +69,6 @@ export const ArticlesArr = [
   {
     'source': {
       'id': null,
-      'name': 'Thedesignfiles.net'
-    },
-    'author': 'The Design Files',
-    'title': 'The Australian Film Tackling The Greatest Issue Of Our Time',
-    'description': 'Though things might seem hopeless, there is always a way forward. If you’re having trouble seeing a glimmer of optimism in light of recent events, head along to watch new Australian film 2040 – there’s free-entry for school-aged children at all Palace Cinemas…',
-    'url': 'https://thedesignfiles.net/2019/05/sustainability-film-2040-damongameau/',
-    'urlToImage': 'https://thedesignfiles.net/wp-content/uploads/2019/05/2040-thd-thv1-520x685.jpg',
-    'publishedAt': '2019-05-24T20:00:40Z',
-    'content': 'Earlier this week I waited in our local cinema. It was a little emptier than usual on cheap-night (thanks GoT), and as the first trailer began to roll, polished, futuristic-yet-familiar scenes captivated the audience. A camera panned over cityscapes of lush r… [+8824 chars]'
-  },
-  {
-    'source': {
-      'id': null,
       'name': 'Indianexpress.com'
     },
     'author': 'C. Raja Mohan',
@@ -105,19 +92,7 @@ export const ArticlesArr = [
     'publishedAt': '2019-05-24T20:00:04Z',
     'content': 'Thousands of school children skipped school to fight climate change on the streets of London on 24 May. These rowdy kids were filmed shouting "Hey Hey! Ho Ho! This climate change has got to go!" at a line of police officers. \r\nBrandishing colourful signs with… [+488 chars]'
   },
-  {
-    'source': {
-      'id': 'the-hill',
-      'name': 'The Hill'
-    },
-    'author': 'Rachel Frazin',
-    'title': 'Paris authorities investigating explosion as possible terror attack',
-    'description': 'Authorities in Paris are investigating a Friday explosion that hurt at least seven people as a possible terror attack.The explosion in Lyon, France, happened around 5:30 p.m. local time and its cause has not been d...',
-    'url': 'https://thehill.com/policy/international/europe/445474-paris-authorities-investigating-explosion-as-possible-terror',
-    'urlToImage': 'https://thehill.com/sites/default/files/lyonsfrance_052419getty.jpg',
-    'publishedAt': '2019-05-24T19:59:46Z',
-    'content': 'Authorities in Paris are investigating a Friday explosion that hurt at least seven people as a possible terror attack.\r\nThe explosion in Lyon, France, happened around 5:30 p.m. local time and its cause has not been determined, according to CNN.\r\nFrench Presid… [+1305 chars]'
-  },
+
   {
     'source': {
       'id': null,
@@ -196,19 +171,7 @@ export const ArticlesArr = [
     'publishedAt': '2019-05-24T19:20:09Z',
     'content': 'Links are submitted by members of the Fark community.\r\nWhen community members submit a link, they also write a custom headline for the story.\r\nOther Farkers comment on the links. This is the number of comments. Click here to read them.\r\nYou need to create an … [+70 chars]'
   },
-  {
-    'source': {
-      'id': null,
-      'name': 'Commondreams.org'
-    },
-    'author': null,
-    'title': 'Waking Up to the Sunrise Movement',
-    'description': 'I battled climate change via a bank shot, never directly, in part because of existential despair. After attending a meeting, I realized my mistake... You can love two children at once,” a colleague once told me. He meant that advocates for a single issue can …',
-    'url': 'https://www.commondreams.org/views/2019/05/24/waking-sunrise-movement',
-    'urlToImage': 'https://www.commondreams.org/sites/default/files/views-article/thumbs/ocean.jpeg',
-    'publishedAt': '2019-05-24T18:47:33Z',
-    'content': 'You can love two children at once, a colleague once told me. He meant that advocates for a single issue can integrate other reform efforts into their agenda without being subsumedand are often more powerful for it.\r\nIn my work promoting democracy reform Ive r… [+6481 chars]'
-  },
+
   {
     'source': {
       'id': null,

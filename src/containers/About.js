@@ -6,13 +6,15 @@ function About () {
     <div className='text-container' >
       <Typography variant='h3'>Our Story</Typography>
       <hr />
-      <Typography variant='h5' style={{ padding: 140 }}>This is a guest post by Anne-Marie Pritchett, a freelance writer, storyteller and idea girl who has lived in six states and two countries. She has a great passion for sustainability and dancing in the rain. She writes handwritten letters to her parents and believes that music can connect souls.
-
-    A sector of tourism, ecotourism is travel to natural areas that provide environmental, cultural and economic benefits to local communities and host countries. It’s about harmoniously interacting with the local people, customs, languages and ecosystems and improving the welfare of the local community.
-
-    Ecotourism is the fastest growing market in the tourism industry and continues to flourish, according to the World Tourism Organization. At an annual growth rate of 5 percent, it accounts for 11.4 percent of global consumer spending.
-
-Eco-tourist destinations are places where visitors can immerse themselves in the local culture while respecting nature and the geographic area’s local traditions.</Typography >
+      <Typography variant='h5' style={{ padding: 10, margin: 100 }}>
+        <p>The world is getting smaller and smaller. This planet has been carried us over from all the crazy moments throughout the histories.
+        Ecotourism is responsible travel to natural areas that conserves the environment and sustains the well-being of local people.
+        Our joint mission is to inspire people over the world to understand our planet - and the challenges it faces. If we can truly understand why nature matters to us all, and what we can do to save it, then we can create a future where nature and people thrive.
+        </p>
+        <p>
+        This platform will provide a space for sharing your journey with the world, and understand what type of damage that our planet has been facing, and we encourage our travelers to share their stories through the camera, that can create awareness of what have you seen on your travel journey, good and bad.If we can truly understand why nature matters to us all, and what we can do to save it, then we can create a future where nature and people thrive.
+        </p>
+      </Typography >
       <hr />
     </div>
   )
