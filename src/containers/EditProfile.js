@@ -36,16 +36,18 @@ class EditProfile extends Component {
         about: this.props.about,
     })
     }
-  // compnentDidUpdate(prevProps) {
-  //   this.setState({
-  //       first_name: prevProps.first_name,
-  //       last_name: prevProps.last_name,
-  //       username: prevProps.username,
-  //       profile_photo: prevProps.profile_photo,
-  //       email: prevProps.email,
-  //       about: prevProps.about,
-  //   })
-  // }
+  componentDidUpdate(prevProps) {
+    if (this.props.first_name !== prevProps.first_name ) {
+      this.setState({
+          first_name: prevProps.first_name,
+          last_name: prevProps.last_name,
+          username: prevProps.username,
+          profile_photo: prevProps.profile_photo,
+          email: prevProps.email,
+          about: prevProps.about,
+      })
+    }
+  }
 
       handleSubmit = (e, id) => {
           e.preventDefault()

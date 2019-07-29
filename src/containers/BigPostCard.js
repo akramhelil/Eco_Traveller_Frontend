@@ -141,10 +141,8 @@ class BigPostCard extends Component {
 }
 
 function mapStateToProps (state) {
-    // console.log(state.currentTraveller)
     return {
       currentTraveller: state.currentTraveller,
-      // currentTrip: state.currentTrip,
       login: state.login
     }
   }

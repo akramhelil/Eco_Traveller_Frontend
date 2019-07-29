@@ -46,12 +46,20 @@ export const styles = {
     textAligin: 'center'
   },
   input: {
-    margin: 5,
-    padding: 5
+    margin: 10,
+    padding: 10
   },
   paper: {
     margin: 20,
     padding: 40
+  },
+  signUppaper: {
+    margin: 60,
+    padding: 80
+  },
+  loginPaper: {
+    margin: 20,
+    padding: 80
   },
   buttonSignUp: {
     marginLeft: 110,
@@ -80,6 +88,7 @@ export const styles = {
   postfeedleft: {
     justifyContent: 'center',
     alignItems: 'center',
+    marginTop: 20,
     marginLeft: 150,
     position: 'fixed',
     width: 500,
