@@ -70,7 +70,7 @@ import { connect } from 'react-redux'
     return (
       <React.Fragment>
        <Grid container direction="column"  alignItems="center" justify="space-evenly">
-            <Paper style={styles.paper}>
+            <Paper style={styles.signUppaper}>
               <form onSubmit={this.handleSubmit}>
                 <Grid item >
                   <Avatar src={this.state.profile_photo} style={styles.newAvatarStyle} />

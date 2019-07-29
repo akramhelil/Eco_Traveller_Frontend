@@ -49,21 +49,28 @@ import { connect } from 'react-redux'
     return (
       <React.Fragment>
         <Grid container direction="column" alignItems="center" >
-        <Grid item style={{padding:40}}>
-          <Paper style={styles.paper}>
-            <div className="signup">
-              <img src="../main_page_logo.png" alt="login" width='300' />
-            <form onSubmit={this.handleSubmit}>
-                  <TextField name='username' label='User Name:' onChange={this.changeHandler} value={this.state.username}/>
-              <br />
-                  <TextField name='password' label='Password:' onChange={this.changeHandler} type='password' value={this.state.password}/>
-              <br />
-              <br/>
-              <input className='button' type='submit' value='LOGIN' />
-            </form>
-            </div>
+          <Grid item style={{padding:40}}>
+            <Paper style={styles.loginPaper}>
+              <div className="signup">
+                <img src="../main_page_logo.png" alt="login" width='300' />
+                <form onSubmit={this.handleSubmit}>
+                  <TextField name='username'
+                    label='User Name:'
+                    onChange={this.changeHandler}
+                    value={this.state.username} />
+                  <br />
+                  <TextField name='password'
+                    label='Password:'
+                    onChange={this.changeHandler}
+                    type='password'
+                    value={this.state.password} />
+                  <br />
+                  <br/>
+                <input className='button' type='submit' value='LOGIN' />
+                </form>
+              </div>
             </Paper>  
-            </Grid>
+          </Grid>
         </Grid>
       </React.Fragment>
     )

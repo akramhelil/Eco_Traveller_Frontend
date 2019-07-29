@@ -8,7 +8,7 @@ class PostDeck extends Component {
       <React.Fragment>
         <Grid container >
           {this.props.posts
-            ? this.props.posts.slice(0, 12).map((post) => {
+            ? this.props.posts.map((post) => {
               return <PostCard post={post} key={post.id} />
             }) : <h1>Loading ...</h1>}
         </Grid>
