@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 
 function FrontPageArticle(props) {
-  render () {
     return (
       <Grid container direction='row' alignItems='center' justify='space-evenly' style={{ margin: 10 }}>
         <Grid item xs={4}>
@@ -36,6 +35,6 @@ function FrontPageArticle(props) {
       </Grid>
     )
   }
-}
+
 
 export default FrontPageArticle

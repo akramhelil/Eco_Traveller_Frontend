@@ -93,7 +93,6 @@ class NavBar extends Component {
 }
 
 function mapStateToProps (state) {
-  // console.log(state.currentTrip)
   return {
     currentTraveller: state.currentTraveller,
     login: state.login
