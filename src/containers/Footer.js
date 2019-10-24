@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid'
-export default class Footer extends Component {
-  render () {
+function Footer() {
     return (
       <React.Fragment>
         <div className='signup'>
@@ -23,4 +22,6 @@ export default class Footer extends Component {
       </React.Fragment>
     )
   }
-}
+
+
+export default Footer
