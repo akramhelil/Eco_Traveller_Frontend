@@ -25,8 +25,8 @@ class UserProfile extends React.Component {
   render () {
     return (
       <React.Fragment>
-        {this.props.currentTraveller
-          ? <div className='signup'>
+        {this.props.currentTraveller ?
+          <div className='signup'>
             <Grid container direction='column' justify='center' alignItems='center' style={styles.profileCard}>
               <Grid item xs={12}>
                 <Avatar src={this.props.currentTraveller.profile_photo} style={styles.avatarStyle} />
@@ -34,10 +34,11 @@ class UserProfile extends React.Component {
 
               <Grid item xs={12}>
                 <Typography style={styles.postDeck} component='h4' variant='h4'>{this.props.currentTraveller.first_name} </Typography>
+{/*                 
                 <Typography variant='subtitle1' color='textSecondary'>Posts: {this.props.currentTraveller.posts.length}
                     &nbsp;&nbsp;
           Trips: {this.props.currentTraveller.trips.length}
-                </Typography>
+                </Typography> */}
               </Grid>
               <Grid item xs={12}>
                 <Link component={EditProfile}>

@@ -2,8 +2,7 @@ import React from 'react'
 import { styles } from '../style/MateilizeStyle'
 import { Grid, Typography, CardMedia, Card } from '@material-ui/core'
 
-class ArticleCard extends React.Component {
-  render () {
+function ArticleCard(props) {
     return (
       <React.Fragment >
         <Card style={styles.paper}>
@@ -11,18 +10,18 @@ class ArticleCard extends React.Component {
             <Grid item xs={4}>
               <CardMedia
                 component='img'
-                image={this.props.article.urlToImage ? this.props.article.urlToImage : './logo.png'}
+                image={props.article.urlToImage ? props.article.urlToImage : './logo.png'}
                 title='Eco - Traveller'
                 style={{ width: '60%' }}
               />
             </Grid >
             <Grid item xs={8}>
-              <Typography variant='h5'>{this.props.article.title}</Typography>
-              <Typography variant='subtitle1'>Author: {this.props.article.author}</Typography>
-              <Typography variant='subtitle2'>Source: {this.props.article.source.name}</Typography >
-              <Typography variant='body2'>Content: {this.props.article.content ? this.props.article.content : this.props.article.description}</Typography>
+              <Typography variant='h5'>{props.article.title}</Typography>
+              <Typography variant='subtitle1'>Author: {props.article.author}</Typography>
+              <Typography variant='subtitle2'>Source: {props.article.source.name}</Typography >
+              <Typography variant='body2'>Content: {props.article.content ? props.article.content : props.article.description}</Typography>
               <a id='articlelink'
-                href={this.props.article.url}
+                href={props.article.url}
                 target='_blank' rel='noopener noreferrer'>
                 <Typography variant='h6'>
                Read More ...
@@ -34,7 +33,6 @@ class ArticleCard extends React.Component {
         </Card>
       </React.Fragment >
     )
-  }
 }
 
 export default ArticleCard
