@@ -78,11 +78,10 @@ import { connect } from 'react-redux'
  }
 
  function mapStateToProps(state) {
-  // console.log(state.currentTraveller)
   return {
     currentTraveller: state.currentTraveller,
     login: state.login
-    // currentTrip: state.currentTraveller.trips[-1] ? state.currentTraveller.trips[-1] : null
+
   }
 }
 

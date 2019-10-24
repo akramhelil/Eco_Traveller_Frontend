@@ -31,7 +31,6 @@ import { connect } from 'react-redux'
       }
 
       handleOpen = () => {
-        // console.log('clicked')
         this.setState({
           open: true
         })
@@ -61,7 +60,6 @@ import { connect } from 'react-redux'
     
     
   render () {
-    // console.log(this.props)
     return (
       <React.Fragment>
         <div className='signup'>

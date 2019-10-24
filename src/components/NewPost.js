@@ -19,11 +19,7 @@ import MenuItem from '@material-ui/core/MenuItem';
     img_url: './logo.png',
     open: false
   }
-   
-   
-  //  componentDidMount() {
-  //    console.log('Mounted')
-  //  }
+  
   
   openWidget = (e) => {
     e.preventDefault()

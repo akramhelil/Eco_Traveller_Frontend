@@ -68,7 +68,6 @@ class PostCard extends React.Component {
 
 
   render() {
-    // console.log(this.state.title)
     return (
       <React.Fragment>
         <Grid item style={styles.postCard} xs>

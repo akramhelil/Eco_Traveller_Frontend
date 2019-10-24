@@ -33,7 +33,6 @@ class NavBar extends Component {
 
 
   render () {
-    // console.log('Nav Bar Props', this.props.currentTraveller)
     const { classes } = this.props
     return (
       <React.Fragment>
